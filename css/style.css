@@ -3,6 +3,12 @@ body {
     background-color: rgb(243, 243, 243);
 }
 
+h4,
+p {
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
 .video-slideshow {
     height: 100vh;
     position: absolute;
@@ -90,7 +96,7 @@ body {
 .navbar {
     background-color: #26afb986;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     position: fixed;
     top: 0;
     left: 0;
@@ -106,9 +112,7 @@ body {
     flex-shrink: 0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transition: 1s ease;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     bottom: -20px;
     border: 2px solid white;
 
@@ -185,14 +189,13 @@ body {
 }*/
 
 .profile_box ul {
-    padding-left: 20px;
+    padding: 20px;
     width: 100%;
     list-style: none;
 }
 
 .profile_box ul li {
     position: relative;
-    padding-left: 20px;
     margin-bottom: 12px;
     line-height: 1.6;
 }
