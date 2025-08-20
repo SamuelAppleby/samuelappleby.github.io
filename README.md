@@ -4,6 +4,6 @@
 
 <h3 align="left">Website:</h3>
 <a href = "https://samuelappleby.github.io/SamuelAppleby/">
-<img src="img/me.jpg" alt="Me" width="40" height="40"/>
+<img src="img/me.png" alt="Me" width="40" height="40"/>
 </a>
 </p>
