@@ -340,30 +340,22 @@ p {
 
 ul.custom-list {
     list-style: none;
-    /* remove default bullets */
     padding-left: 0;
-    /* remove default padding */
     margin: 1rem 0;
-    /* optional: spacing above/below the whole list */
 }
 
 ul.custom-list li {
     position: relative;
     padding-left: 25px;
-    /* space for the dash */
     margin-bottom: 1rem;
-    /* space between items */
     line-height: 1.5;
-    /* optional: make text more readable */
 }
 
 ul.custom-list li::before {
     content: '–';
-    /* grey dash */
     color: grey;
     position: absolute;
     left: 0;
     top: 0;
     font-weight: bold;
-    /* optional: make dash bolder */
 }
