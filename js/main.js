@@ -1,117 +1,56 @@
-(function ($) {
-	"use strict";
-	var nav = $('nav');
-  var navHeight = nav.outerHeight();
-  
-  $('.navbar-toggler').on('click', function() {
-    if( ! $('#mainNav').hasClass('navbar-reduce')) {
-      $('#mainNav').addClass('navbar-reduce');
-    }
-  })
+// Select all anchor links that reference an id
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // prevent default jump
 
-  // Preloader
-  $(window).on('load', function () {
-    if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function () {
-        $(this).remove();
-      });
-    }
-  });
+        const target = document.querySelector(this.getAttribute('href'));
+        if (!target) return;
 
-  // Back to top button
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
-    } else {
-      $('.back-to-top').fadeOut('slow');
-    }
-  });
-  $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
-    return false;
-  });
+        // Custom smooth scroll using requestAnimationFrame
+        const startPosition = window.pageYOffset;
+        const targetPosition = target.getBoundingClientRect().top - 70; // offset for navbar
+        const duration = 1000; // ms
+        let startTime = null;
 
-	/*--/ Star ScrollTop /--*/
-	$('.scrolltop-mf').on("click", function () {
-		$('html, body').animate({
-			scrollTop: 0
-		}, 1000);
-	});
+        function easeInOutQuad(t) {
+            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+        }
 
-	/*--/ Star Counter /--*/
-	$('.counter').counterUp({
-		delay: 15,
-		time: 2000
-	});
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1);
+            const run = startPosition + targetPosition * easeInOutQuad(progress);
+            window.scrollTo(0, run);
+            if (timeElapsed < duration) requestAnimationFrame(animation);
+        }
 
-	/*--/ Star Scrolling nav /--*/
-	$('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
-		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			if (target.length) {
-				$('html, body').animate({
-					scrollTop: (target.offset().top - navHeight + 5)
-				}, 1000, "easeInOutExpo");
-				return false;
-			}
-		}
-	});
+        requestAnimationFrame(animation);
+    });
+});
 
-	// Closes responsive menu when a scroll trigger link is clicked
-	$('.js-scroll').on("click", function () {
-		$('.navbar-collapse').collapse('hide');
-	});
+const videos = document.querySelectorAll('.bg-video');
+let current = 0;
+const duration = 10000; // 10 seconds per video
+const fadeTime = 3000; // 1 second fade
 
-	// Activate scrollspy to add active class to navbar items on scroll
-	$('body').scrollspy({
-		target: '#mainNav',
-		offset: navHeight
-	});
-	/*--/ End Scrolling nav /--*/
+// Make the first video visible immediately
+videos[current].classList.add('active');
+videos[current].play();
 
-	/*--/ Navbar Menu Reduce /--*/
-	$(window).trigger('scroll');
-	$(window).on('scroll', function () {
-		var pixels = 50; 
-		var top = 1200;
-		if ($(window).scrollTop() > pixels) {
-			$('.navbar-expand-md').addClass('navbar-reduce');
-			$('.navbar-expand-md').removeClass('navbar-trans');
-		} else {
-			$('.navbar-expand-md').addClass('navbar-trans');
-			$('.navbar-expand-md').removeClass('navbar-reduce');
-		}
-		if ($(window).scrollTop() > top) {
-			$('.scrolltop-mf').fadeIn(1000, "easeInOutExpo");
-		} else {
-			$('.scrolltop-mf').fadeOut(1000, "easeInOutExpo");
-		}
-	});
+setInterval(() => {
+    const prevVideo = videos[current];
+    current = (current + 1) % videos.length;
+    const nextVideo = videos[current];
 
-	/*--/ Star Typed /--*/
-	if ($('.text-slider').length == 1) {
-    var typed_strings = $('.text-slider-items').text();
-		var typed = new Typed('.text-slider', {
-			strings: typed_strings.split(','),
-			typeSpeed: 80,
-			loop: true,
-			backDelay: 1100,
-			backSpeed: 30
-		});
-	}
+    nextVideo.classList.add('active'); // start fade-in
+    nextVideo.currentTime = 0;
+    nextVideo.play();
 
-	/*--/ Testimonials owl /--*/
-	$('#testimonial-mf').owlCarousel({
-		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 4000,
-		autoplayHoverPause: true,
-		responsive: {
-			0: {
-				items: 1,
-			}
-		}
-	});
+    // Fade out previous video
+    setTimeout(() => {
+        prevVideo.classList.remove('active');
+        prevVideo.pause();
+    }, fadeTime); // remove after fade completes
+}, duration);
 
-})(jQuery);

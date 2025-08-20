@@ -1,502 +1,381 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<script src="js/main.js" defer></script>
+<link rel="stylesheet" href="css/style.css">
+<!-- TODO Add my circle face to the navbar with a border and maybe a horizontal line across the screen -->
 
-<head>
-    <meta charset="utf-8">
-    <title>Samuel Appleby's Website</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicons -->
-    <link href="img/me.jpg" rel="icon">
-
-    <!-- Bootstrap CSS File -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Libraries CSS Files -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Main Stylesheet File -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- =======================================================
-      Theme Name: DevFolio
-      Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-      Author: BootstrapMade.com
-      License: https://bootstrapmade.com/license/
-    ======================================================= -->
-</head>
-
-<body id="page-top">
-
-    <!--/ Nav Star /-->
-    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll" href="#page-top">Samuel Appleby</a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-                aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-            </button>
-            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#cv">C.V</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#dissertations">Dissertations</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#universityWork">University Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#personalProjects">Personal Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<body>
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#cv">CV</a>
+        <!-- <img src="https://1drv.ms/i/c/a29e1a49be9c04cc/IQRhXRvZKRjuQbx4C1tJNQWPAUhAN5iztQ0qIRxJUuLbe2M"> -->
+        <img src="img/me.png">
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
     </nav>
-    <!--/ Nav End /-->
-    <!--/ Intro Skew Start /-->
-    <div id="home" class="intro route bg-image">
-        <div class="intro-content display-table">
-            <div class="table-cell">
-                <div class="container">
-                    <h1 class="intro-title mb-4">Samuel Appleby</h1>
-                    <p class="intro-subtitle"><span class="text-slider-items">Junior Network Programmer, MSc Computer
-                            Game Engineering, BSc
-                            Computer Science</span><strong class="text-slider"></strong></p>
-                </div>
-            </div>
-        </div>
-        <div class="vid" z-index: -5>
-            <video autoplay muted loop class="default-vid" width="100%">
-                <source src="img/test.mp4" type="video/mp4">
-            </video>
-        </div>
+
+    <div class="video-slideshow">
+        <video class="bg-video" muted playsinline>
+            <source src="videos/allstars.mp4" type="video/mp4">
+        </video>
+        <video class="bg-video" muted playsinline>
+            <source src="videos/sac_new.mp4" type="video/mp4">
+        </video>
+        <video class="bg-video" muted playsinline>
+            <source src="videos/cyberpunk.mp4" type="video/mp4">
+        </video>
+        <video class="bg-video" muted playsinline>
+            <source src="videos/sac_noisy.mp4" type="video/mp4">
+        </video>
     </div>
-    <!--/ Intro Skew End /-->
 
-    <section id="about" class="portfolio-mf sect-pt4 route">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="box-shadow-full">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-5">
-                                        <div class="about-img">
-                                            <img src="img/me.jpg" class="img-fluid rounded b-shadow-a"
-                                                alt="facebook.png">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-7">
-                                        <div class="about-info">
-                                            <p><span class="title-s">Name: </span> <span>Samuel Appleby</span></p>
-                                            <p><span class="title-s">Current Position: </span> <span>Junior Network
-                                                    Programmer, Lucid Games</span></p>
-                                            <p><span class="title-s">Email: </span>
-                                                <span>sambuzzappleby@hotmail.co.uk</span>
-                                            </p>
-                                            <p><span class="title-s">Phone: </span> <span>(+44) 7465 439846</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skill-mf">
-                                    <span class="title-s">Programming Languages:<br /></span>
-                                    <span>C++</span> <span class="pull-right">90%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 90%;"
-                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="50"></div>
-                                    </div>
-                                    <span>Javascript</span> <span class="pull-right">70%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 70%"
-                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="50"></div>
-                                    </div>
-                                    <span>C#</span> <span class="pull-right">65%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 65%"
-                                            aria-valuenow="65" aria-valuemin="0" aria-valuemax="50"></div>
-                                    </div>
-                                    <span>Java</span> <span class="pull-right">55%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 55%"
-                                            aria-valuenow="55" aria-valuemin="0" aria-valuemax="50"></div>
-                                    </div>
-                                    <span>C</span> <span class="pull-right">40%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 40%"
-                                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="50"></div>
-                                    </div>
-                                    <span class="title-s">IDE: </span>
-                                    <span class>
-                                        <p>Visual Studio 2019, Visual Studio Code, Eclipse, Android Studio</p>
-                                    </span>
-                                    <span class="title-s">Game Engines:</span>
-                                    <span>
-                                        <p>Unity, Unreal, GDevelop5</p>
-                                    </span>
-                                    <span class="title-s">Web Technologies:</span>
-                                    <span>
-                                        <p>Node.js, Postman, REST API</p>
-                                    </span>
-                                    <span class="title-s">Source Control:</span>
-                                    <span>
-                                        <p>GitHub, GitKraken, Perforce</p>
-                                    </span>
-                                    <span class="title-s">Continious Integration:</span>
-                                    <span>
-                                        <p>Jenkins</p>
-                                    </span>
-                                    <span class="title-s">Database Systems:</span>
-                                    <span>
-                                        <p>MySQL Workbench</p>
-                                    </span>
-                                    <span class="title-s">Graph Modelling:</span>
-                                    <span>
-                                        <p>Workcraft</p>
-                                    </span>
-                                    <span class="title-s">Graphics Debugging:</span>
-                                    <span>
-                                        <p>Nvidia Nsight</p>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="about-me pt-4 pt-md-0">
-                                    <div class="title-box-2">
-                                        <h5 class="title-left">About me </h5>
-                                    </div>
-                                    <p class="lead">
-                                        I am a PhD student currently researching machine learning and database technologies, formerly a junior network programmer at <a
-                                            href="https://www.lucidgames.co.uk/">Lucid Games Ltd.</a>
-                                    </p>
-                                    <p class="lead"> As a network programmer at Lucid
-                                        Games, I became more experienced with REST API. A lot of the work included managing
-                                        message protocols between the client and the web service, which I maintained.
-                                        An important aspect of my work was on Unreal's <a
-                                        href="https://docs.unrealengine.com/4.27/en-US/TestingAndOptimization/Automation/Gauntlet/">Gauntlet's
-                                        Automation Framework.</a>
-                                        Here, I re-adapted the automation tests to communicate and synchromise with the web serivce,
-                                         allowing for greater control from the network. I also wrote the HTTP request system for this project.
-                                    </p>
-                                    <p class="lead">I have been programming for 4 years, achieving first class degrees
-                                        in MSc Game Engineering and BSc Computer Science from Newcastle University.
-                                    </p>
-                                    <p class="lead">I am also comfortable in C#,
-                                        which I have used for my Unity projects, including my dissertation project for
-                                        my undergraduate degree (in addition to Gauntlet).
-                                    </p>
-                                    <p class="lead"> In addition to my university work, I have also produced some
-                                        applications of my own, such as a Pokémon analyser. My GitHub, containing most
-                                        of my projects, can be found <a
-                                            href="https://github.com/SamuelAppleby">here.</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+    <section id="about" class="container" style="margin-top:1000px">
+        <div class="profile_box">
+            <h2 class="section_title">About</h2>
+            <hr class="grey_rule" style="width: 8%">
+            <!-- <img src="https://1drv.ms/i/c/a29e1a49be9c04cc/IQRhXRvZKRjuQbx4C1tJNQWPAUhAN5iztQ0qIRxJUuLbe2M"> -->
+            <img src="img/me.png">
+            <ul>
+                <li>
+                    I am a PhD student currently awaiting my viva (exp. late 2025). My thesis is titled: <br><br><i>On
+                        the
+                        Modelling of Temporal Data: Linear Logics in Event Logs and Deep Reinforcement Learning
+                        in Real-Time Simulations</i><br><br> Bridging the gap between Temporal modelling as
+                    found
+                    in
+                    Business Process Management (BPMN) versus those in real-time systems exploited by (deep)
+                    reinforcement learning.
+                </li>
+
+                <li>
+                    Prior to my PhD, and during my MSc in Computer Game Engineering, I was a
+                    junior network programmer at <a href="https://www.lucidgames.co.uk/">Lucid Games Ltd</a>.
+                    developing <i>Destruction AllStars</i>, a new release for the (also newly released) PlayStation 5.
+                    Here, I became familiar with REST API technologies and Node.js. My significant contributions
+                    include:
+
+                    <ul class="custom-list">
+                        <li>Managing message protocols between the client and the web service; specifically, the
+                            integration of filtering into their matchmaking system</li>
+                        <li>Extending Unreal's
+                            <a
+                                href="https://docs.unrealengine.com/4.27/en-US/TestingAndOptimization/Automation/Gauntlet/">Gauntlet's
+                                Automation Framework.</a> Here, I re-adapted the automation tests to communicate and
+                            synchronise
+                            with the web service, allowing for greater control from the network. I also wrote the HTTP
+                            request
+                            system for this project.
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    I have been programming since the start of my bachelor's degree in September 2017. Major milestones
+                    include:
+                    <ul class="custom-list">
+                        <li>PhD Thesis defence (exp. late 2025, Newcastle University)</li>
+                        <li><strong>Distinction</strong>, MSc Computer Game Engineering (Newcastle University)</li>
+                        <li><strong>1:1</strong>, BSc Computer
+                            Science (Newcastle University)</li>
+                    </ul>
+                </li>
+
+                <li>
+                    My preferred languages are: Python; C#, C++, Java and C.
+                </li>
+
+                <li>
+                    I have also produced some applications of my own. This includes my Pokémon
+                    analyser; which has also been used by other developers in the industry of Pokémon game balancing.
+                </li>
+
+                <li>
+                    My GitHub, containing most of my projects, can be found <a
+                        href="https://github.com/SamuelAppleby">here.</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <hr class="grey_rule">
+
+    <section id="cv" class="container">
+        <div class="profile_box">
+            <h2 class="section_title">CV</h2>
+            <hr class="grey_rule" style="width: 8%">
+            <!-- <iframe src="https://1drv.ms/b/c/a29e1a49be9c04cc/IQS6XzApVDNSSZ92xC4unjLpASHbzR1-inJpeq-3nqpEKZE"
+                width="30%" height="600px" frameborder="0" scrolling="auto">
+            </iframe> -->
+            <embed src="cv.pdf" type="application/pdf" width="100%" height="1000px">
+        </div>
+    </section>
+
+    <hr class="grey_rule">
+
+    <section id="projects" class="container">
+        <div class="profile_box">
+            <h2 class="section_title">Projects</h2>
+            <hr class="grey_rule" style="width: 8%">
+            <h3 class="section_title">Personal</h3>
+            <hr class="grey_rule" style="width: 5%">
+            <p>I have a few personal projects which i have worked on in my own time, located on my GitHub <a
+                    href="https://github.com/SamuelAppleby">here</a>.</p>
+
+            <div class="video_gallery">
+                <div class="profile_box" style="background-color: #80abdd94;">
+                    <a href="https://github.com/SamuelAppleby/Pokemon_Analyser" target="_blank">
+                        <img src="img/pokemon.jpg" alt="pokémon">
+                    </a>
+                    </img>
+                    <h4>Pokémon Team Analyser</h4>
+                    <p>A Pokémon type analyser, providing the optimal teams combinations per configuration. Uses
+                        Google API to communicate with online spreadsheet datasets. Used by other developers for
+                        Pokémon spin-off game balancing.</p>
+                </div>
+            </div>
+            <h3 class="section_title">MSc Computer Game Engineering</h3>
+            <hr class="grey_rule" style="width: 5%">
+            <h4 class="section_title">Team Project</h4>
+            <hr class="grey_rule" style="width: 3%">
+            <p>The team project during my MSc degree involved the recreation of a "Fall Guys"
+                knock-off.Our team
+                built a custom game engine from a skeleton codebase using following middleware. The following
+                showcase the levels from my team project (<strong>Feb-Mar, 2021</strong>).</p>
+
+            <div class="video_gallery">
+                <div class="profile_box" style="width: 200px; margin: 20px auto">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/AAyKStAa8xE" allowfullscreen>
+                        </iframe>
                     </div>
+                    <h4>Bounce Guys</h4>
+                </div>
+
+                <div class="profile_box" style="width: 200px; margin: 20px auto">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/kQibG_dDjfg" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h4>Monke Kong</h4>
+                </div>
+
+                <div class="profile_box" style="width: 200px; margin: 20px auto">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/5QDYEH0j34E" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h4>Cannon Hell</h4>
+                </div>
+
+                <div class="profile_box" style="width: 200px; margin: 20px auto">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/FnK2_-T75i4" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h4>Sandbox</h4>
+                </div>
+
+                <div class="profile_box" style="width: 200px; margin: 20px auto">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/W7C8Sc-Hu8Y" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h4>Alpha Build</h4>
+                </div>
+            </div>
+
+            <h4 class="section_title">Individual Work</h4>
+            <hr class="grey_rule" style="width: 3%">
+            <p>During my BSc and MSc, modules involved the development of game technologies. The following
+                demonstrate those.</p>
+
+            <div class="video_gallery">
+                <div class="profile_box" style="width: 200px; margin: 20px auto">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/yuYH6jy9kvs" allowfullscreen></iframe>
+                    </div>
+                    <h4>Game Technology Innovations</h4>
+                    <p><strong>Jan-Feb, 2021</strong>. Using a commercial game engine to prototype a "Fall
+                        Guys" knock-off. Available to play <a
+                            href="https://samuelappleby.github.io/CSC8507-Coursework/">here!</a></p>
+                </div>
+
+                <div class="profile_box" style="width: 200px; margin: 20px auto">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/QZIRu0sOnW0" allowfullscreen></iframe>
+                    </div>
+                    <h4>Advanced Game Technologies</h4>
+                    <p><strong>Dec, 2020-Jan, 2021</strong>. In a homebrew C++ game engine, prototype a "Fall Guys"
+                        knock-off.
+                    </p>
+                </div>
+
+                <div class="profile_box" style="width: 200px; margin: 20px auto">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/Im6vMV-IjYI" allowfullscreen></iframe>
+                    </div>
+                    <h4>Advanced Graphics For Games</h4>
+                    <p><strong>Nov-Dec, 2020</strong>. Create a <i>Cyberpunk</i> setting using OpenGL.</p>
+                </div>
+            </div>
+
+            <h3 class="section_title">BSc Computer Science</h3>
+            <hr class="grey_rule" style="width: 5%">
+            <div class="video_gallery">
+                <div class="profile_box" , style="width: 200px; margin: 20px auto">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/os0XWlppJ5g" allowfullscreen></iframe>
+                    </div>
+                    <h4>Computer Games Development</h4>
+                    <p><strong>Jan-May, 2020</strong>. Create a video game using any engine/technologies. Available to
+                        play
+                        <a href="https://samuelappleby.github.io/CSC3224-EscapeFromDarkwaterCastle/">here!</a>
+                    </p>
+                </div>
+
+                <div class="profile_box" , style="width: 200px; margin: 20px auto">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/_jBOvofF6C0" allowfullscreen></iframe>
+                    </div>
+                    <h4>Dissertation</h4>
+                    <p><strong>Sep, 2019 - May, 2020</strong>. Final year undergraduate dissertation project using
+                        Goal-Oriented
+                        Action
+                        Planning for game AI.</p>
+                </div>
+
+                <div class="profile_box" , style="width: 200px; margin: 20px auto">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/5HuUjj7Qa1w" allowfullscreen></iframe>
+                    </div>
+                    <h4>Gaming Simulations</h4>
+                    <p><strong>Jan-May, 2020</strong>. Finish the physics engine, input and game logic for an arcade
+                        game.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="cv" class="portfolio-mf sect-pt4 route">
-        <div class="container">
-            <div class="title-box text-center">
-                <h4 class="title-a">C.V</h4>
-                <div class="line-mfalt"></div>
-            </div>
-            <div class="text-center">
-                <iframe src="https://onedrive.live.com/embed?cid=A29E1A49BE9C04CC&resid=A29E1A49BE9C04CC%2114812&authkey=ACyoTC3jyud1r2Y&em=2"
-                    allow="autoplay"></iframe>
-                    <div class="download-link">
-                        <a href="https://onedrive.live.com/download?cid=A29E1A49BE9C04CC&resid=A29E1A49BE9C04CC%2114812&authkey=ACyoTC3jyud1r2Y" download>Download</a>
-                    </div>         
-            </div>
-        </div>
-    </section>
+    <hr class="grey_rule">
 
-    <!-- <section id="dissertations" class="portfolio-mf sect-pt4 route">
-        <div class="container">
-            <div class="title-box text-center">
-                <h4 class="title-a">Dissertations</h4>
-                <div class="line-mf"></div>
-            </div>
-            <div class="text-center">
-                <h3 class="title-box">MSc Computer Game Engineering<h4 class = "lead">Awarded the Philip Merlin Prize for Best Disseration by an MSc Student in the School of Computing (2022)</h4></h3>
-                <div class="line-mf"></div>
-                <iframe src="https://onedrive.live.com/embed?cid=A29E1A49BE9C04CC&resid=A29E1A49BE9C04CC%2114810&authkey=AFHcarhGObvedLY&em=2"
-                    allow="autoplay"></iframe>
-                <div class="download-link">
-                    <a href="https://onedrive.live.com/download?cid=A29E1A49BE9C04CC&resid=A29E1A49BE9C04CC%211485&authkey=AFHcarhGObvedLY&em=2"
-                        download>Download</a>
+    <section id="publications" class="container">
+        <div class="profile_box">
+            <h2 class="section_title">Publications</h2>
+            <hr class="grey_rule" style="width: 8%">
+            <div class="pub_box">
+                <div class="title_img">
+                    <h4><strong>Appleby, S.</strong>, Ushaw, G. (2025). <i>From Camera Image to Active Target Tracking:
+                            Modelling, Encoding and Metrical Analysis for Unmanned Underwater Vehicles</i>. AI 2025,
+                        6(4),
+                        71. <a href="https://doi.org/10.3390/ai6040071" target="_blank">10.3390/ai6040071</a></h4>
+                    <a href="https://github.com/SamuelAppleby/SWiMM_DEEPeR" target="_blank">
+                        <img src="img/swimm.png" alt="swimm">
+                    </a>
                 </div>
-                <h3 class="title-box">BSc Computer Science</h3>
-                <div class="line-mf"></div>
-                <iframe src="https://onedrive.live.com/embed?cid=A29E1A49BE9C04CC&resid=A29E1A49BE9C04CC%2114817&authkey=ACdrWHFTJVovmVw&em=2"
-                    allow="autoplay"></iframe>
-                <div class="download-link">
-                    <a href="https://onedrive.live.com/download?cid=A29E1A49BE9C04CC&resid=A29E1A49BE9C04CC%2114817&authkey=ACdrWHFTJVovmVw&em=2"
-                        download>Download</a>
-                </div>
-            </div>
-        </div>
-    </section> -->
+                <p><strong>Keywords:</strong> Deep Learning, Reinforcement Learning, Active Target Tracking, Computer
+                    Vision, Sim-to-Real, Unity, Simulation</p>
 
-    <!--/ Section Portfolio Star /-->
-    <section id="universityWork" class="portfolio-mf sect-pt4 route">
-        <div class="container">
-            <div class="title-box text-center">
-                <h3 class="title-a">University Work</h3>
-                <div class="line-mfalt"></div>
-                <h3>Engine Programming</h3>
-                <div class="line-mf"></div>
-                <p class="lead">
-                    Our team built a custom game engine from a skeleton codebase using the following
-                    middleware
+            </div>
+
+            <div class="pub_box">
+                <div class="title_img">
+                    <h4><strong>Appleby, S.</strong>, Crane, K., Bergami, G., McGough A. S. (2025). <i>SWiMM DEEPeR: A
+                            Simulated Underwater Environment for Tracking Marine Mammals Using Deep Reinforcement
+                            Learning
+                            and BlueROV2</i>. AI 2025, 6(4),
+                        71. <a href="https://doi.org/10.1109/CoG57401.2023.10333168"
+                            target="_blank">10.1109/CoG57401.2023.10333168</a></h4>
+                    <a href="https://github.com/SamuelAppleby/SWiMM_DEEPeR" target="_blank">
+                        <img src="img/swimm.png" alt="swimm">
+                    </a>
+                </div>
+                <p><strong>Keywords:</strong> Deep Learning, Reinforcement Learning, Active Target Tracking, Computer
+                    Vision, Sim-to-Real, Unity, Simulation</p>
+            </div>
+
+            <div class="pub_box">
+                <div class="title_img">
+                    <h4>Bergami, G., <strong>Appleby, S.</strong>, Morgan, G. (2023). <i>Specification Mining over
+                            Temporal
+                            Data</i>. Computers 2023, 12(9), 185. <a href="https://doi.org/10.3390/computers12090185"
+                            target="_blank">10.3390/computers12090185</a></h4>
+                    <a href="https://github.com/LogDS/knobab/" target="_blank">
+                        <img src="img/knobab.png" alt="Knobab">
+                    </a>
+                </div>
+                <p><strong>Keywords:</strong> Specification Mining, Temporal Data, Algorithm, Heuristic Search
                 </p>
             </div>
-            <div class="work-box">
-                <a href="https://developer.nvidia.com/physx-sdk">
-                    <img src="img/physx.png" alt="PhyX">
-                </a>
-            </div>
-            <div class="work-box">
-                <a href="https://www.opengl.org//">
-                    <img src="img/opengl.png" alt="opengl">
-                </a>
-            </div>
-            <div class="work-box">
-                <a href="https://github.com/ocornut/imgui">
-                    <img src="img/imgui.gif" alt="imgui">
-                </a>
-            </div>
-            <div class="work-box">
-                <a href="https://www.ambiera.com/irrklang/">
-                    <img src="img/irrklang.png" alt="irrklang">
-                </a>
-            </div>
-            <div class="work-box">
-                <a href="https://mobius3.github.io/tweeny/">
-                    <img src="img/tween.gif" alt="tweeny">
-                </a>
-            </div>
-            <div class="title-box text-center">
-                <h3>Team Projects</h3>
-                <div class="line-mfalt"></div>
-            </div>
-            <div class="work-box">
-                <iframe src="https://www.youtube.com/embed/AAyKStAa8xE" allowfullscreen></iframe>
-                <div class="work-content">
-                    <h2 class="w-title">CSC8508: Bounce Guys</h2>
-                    <div class="w-more">
-                        Languages: C++ <br> Engine: Custom <br> Grade: 80% <br>
-                        <span class="w-date">Date: 26 / 03 / 2021 </span>
-                    </div>
-                </div>
-            </div>
-            <div class="work-box">
-                <iframe src="https://www.youtube.com/embed/kQibG_dDjfg" allowfullscreen></iframe>
-                <div class="work-content">
-                    <h2 class="w-title">CSC8508: Monke Kong</h2>
-                    <div class="w-more">
-                        Languages: C++ <br> Engine: Custom <br> Grade: 80% <br>
-                        <span class="w-date">Date: 26 / 03 / 2021 </span>
-                    </div>
-                </div>
-            </div>
-            <div class="work-box">
-                <iframe src="https://www.youtube.com/embed/5QDYEH0j34E" allowfullscreen></iframe>
-                <div class="work-content">
-                    <h2 class="w-title">CSC8508: Cannon Hell</h2>
-                    <div class="w-more">
-                        Languages: C++ <br> Engine: Custom <br> Grade: 80% <br>
-                        <span class="w-date">Date: 26 / 03 / 2021 </span>
-                    </div>
-                </div>
-            </div>
-            <div class="work-box">
-                <iframe src="https://www.youtube.com/embed/FnK2_-T75i4" allowfullscreen></iframe>
-                <div class="work-content">
-                    <h2 class="w-title">CSC8508: Sandbox</h2>
-                    <div class="w-more">
-                        Languages: C++<br> Engine: Custom <br> Grade: 80% <br>
-                        <span class="w-date">Date: 26 / 03 / 2021 </span>
-                    </div>
-                </div>
-            </div>
-            <div class="work-box">
-                <iframe src="https://www.youtube.com/embed/W7C8Sc-Hu8Y" allowfullscreen></iframe>
-                <div class="work-content">
-                    <h2 class="w-title">CSC8508: Alpha Build</h2>
-                    <div class="w-more">
-                        Languages: C++<br> Engine: Custom<br> Grade: 80% <br>
-                        <span class="w-date">Date: 12 / 03 / 2021 </span>
-                    </div>
-                </div>
-            </div>
-            <div class="title-box text-center">
-                <h3>Individual Projects</h3>
-                <div class="line-mfalt"></div>
-            </div>
-            <div class="work-box">
-                <iframe src="https://www.youtube.com/embed/yuYH6jy9kvs" allowfullscreen></iframe>
-                <div class="work-content">
-                    <h2 class="w-title">CSC8507: Game Technology Innovations</h2>
-                    <div class="w-more">
-                        Languages: C# <br> Engine: Unity <br> Grade: 92% <br>
-                        <span class="w-date">Date: 25 / 02 / 2021 - Available to play: <a
-                                href="https://samuelappleby.github.io/CSC8507-Coursework/">Here!</a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="work-box">
-                <iframe src="https://www.youtube.com/embed/QZIRu0sOnW0" allowfullscreen></iframe>
-                <div class="work-content">
-                    <h2 class="w-title">CSC8503: Advanced Game Technologies</h2>
-                    <div class="w-more">
-                        Languages: C++ <br> Engine: Custom <br>Grade: 98% <br>
-                        <span class="w-date">Date: 22 / 01 / 2021</span>
-                    </div>
-                </div>
-            </div>
-            <div class="work-box">
-                <iframe src="https://www.youtube.com/embed/Im6vMV-IjYI" allowfullscreen></iframe>
-                <div class="work-content">
-                    <h2 class="w-title">CSC8502: Advanced Graphics For Games</h2>
-                    <div class="w-more">
-                        Languages: C++, GLSL <br> Engine: Custom <br> Grade: 96% <br>
-                        <span class="w-date">Date: 05 / 12 / 2020</span>
-                    </div>
-                </div>
-            </div>
-            <div class="work-box">
-                <iframe src="https://www.youtube.com/embed/os0XWlppJ5g" allowfullscreen></iframe>
-                <div class="work-content">
-                    <h2 class="w-title">CSC3224: Computer Games Development</h2>
-                    <div class="w-more">
-                        Languages: Javascript: <br> Engine: GDevelop <br> Grade: 96%: <br>
-                        <span class="w-date">
-                            Date: 15 / 05 / 2020 - Available to play: <a
-                                href="https://samuelappleby.github.io/CSC3224-EscapeFromDarkwaterCastle/">Here!</a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="work-box">
-                <iframe src="https://www.youtube.com/embed/_jBOvofF6C0" allowfullscreen></iframe>
-                <div class="work-content">
-                    <h2 class="w-title">CSC3095: Dissertation</h2>
-                    <div class="w-more">
-                        Languages: C# <br> Engine: Unity <br>Grade: 90% <br>
-                        <span class="w-date">Date: 11 / 05 / 2020</span>
-                    </div>
-                </div>
-            </div>
-            <div class="work-box">
-                <iframe src="https://www.youtube.com/embed/5HuUjj7Qa1w" allowfullscreen></iframe>
-                <div class="work-content">
-                    <h2 class="w-title">CSC3222: Gaming Simulations</h2>
-                    <div class="w-more">
-                        Languages: C++ <br> Engine: Custom <br> Grade: 89% <br>
-                        <span class="w-date">Date: 5 / 05 / 2020</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="personalProjects" class="portfolio-mf sect-pt4 route">
-        <div class="container">
-            <div class="title-box text-center">
-                <h3 class="title-a">Personal Projects</h3>
-                <div class="line-mf"></div>
-                <h3>Desktop Applications</h3>
-                <div class="line-mf"></div>
-                <p class="lead">
-                    I have a few personal projects which i have worked on in my own time, located on my gitub <a
-                        href="https://github.com/SamuelAppleby">here</a>
+            <div class="pub_box">
+                <div class="title_img">
+                    <h4><strong>Appleby, S.</strong>, Bergami, G., Morgan, G. (2023). <i>Enhancing Declarative Temporal
+                            Model Mining in Relational Databases: A Preliminary Study</i>.
+                        ACM IDEAS 2023, pp. 34-42, 185. <a href="https://doi.org/10.1145/3589462.3589491"
+                            target="_blank">10.1145/3589462.3589491</a></h4>
+                    <a href="https://github.com/LogDS/knobab/" target="_blank">
+                        <img src="img/knobab.png" alt="Knobab">
+                    </a>
+                </div>
+                <p><strong>Keywords:</strong> Specification Mining, Temporal Data, Algorithm, Heuristic Search
+                </p>
+            </div>
+
+            <div class="pub_box">
+                <div class="title_img">
+                    <h4>Bergami, G., <strong>Appleby, S</strong>. (2023). <i>Quickening Data-Aware Conformance Checking
+                            through Temporal Algebras</i>. Information 2023, 14(3), 173. <a
+                            href="https://doi.org/10.3390/info14030173" target="_blank">10.3390/info14030173</a></h4>
+                    <a href="https://github.com/LogDS/knobab/" target="_blank">
+                        <img src="img/knobab.png" alt="Knobab">
+                    </a>
+                </div>
+                <p><strong>Keywords:</strong> Conformance Checking, Temporal Algebras, Business Process Management</p>
+            </div>
+
+            <div class="pub_box" style="margin-bottom: 0px;">
+                <div class="title_img">
+                    <h4><strong>Appleby, S.</strong>, Bergami, G., Morgan, G. (2022). <i>Running Temporal Logical
+                            Queries on
+                            the Relational Model</i>. ACM IDEAS 2022, pp. 134–143. <a
+                            href="https://doi.org/10.1145/3548785.3548786" target="_blank">10.1145/3548785.3548786</a>
+                    </h4>
+                    <a href="https://github.com/LogDS/knobab/" target="_blank">
+                        <img src="img/knobab.png" alt="Knobab">
+                    </a>
+                </div>
+                <p><strong>Keywords:</strong> Temporal Queries, Relational Model, Query Optimization, Database Systems
                 </p>
             </div>
         </div>
     </section>
 
-    <!--/ Section Portfolio End /-->
-    <!--/ Section Contact-Footer Star /-->
-    <section class="paralax-mf bg-image" style="background-image: url(img/intro-bg.jpg)">
-        <div class="overlay-mf"></div>
-        <div class="container">
-            <div class="contact-mf">
-                <div id="contact" class="box-shadow-full">
-                    <div class="title-box text-center">
-                        <h2>Contact Details</h2>
-                        <div class="line-mf"></div>
-                    </div>
-                    <div class="more-info">
-                        <ul class="list-ico">
-                            <li><span class="ion-ios-location"></span> Newcastle Upon Tyne,
-                                Northumberland</li>
-                            <li><span class="ion-ios-telephone"></span> (+44) 7465 439846</li>
-                            <li><span class="ion-email"></span> sambuzzappleby@hotmail.co.uk</li>
-                        </ul>
-                    </div>
-                    <div class="socials">
-                        <a href="https://www.facebook.com/sam.appleby.92/">
-                            <img src="img/facebook1.png" alt="Facebook" onmouseover="this.src='img/facebook.png'"
-                                onmouseout="this.src='img/facebook1.png'" width="5%" height="5%">
-                        </a>
-                        <a href="https://www.linkedin.com/in/samuel-appleby-52a673206/">
-                            <img src="img/linkedin1.png" alt="Linkedin" onmouseover="this.src='img/linkedin.png'"
-                                onmouseout="this.src='img/linkedin1.png'" width="5%" height="5%">
-                        </a>
-                        <a href="https://github.com/SamuelAppleby">
-                            <img src="img/github1.png" alt="Github" onmouseover="this.src='img/github.png'"
-                                onmouseout="this.src='img/github1.png'" width="5%" height="5%">
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCTYYNu3L4w2ydM7KhX6sFMw">
-                            <img src="img/youtube1.png" alt="Youtube" onmouseover="this.src='img/youtube.png'"
-                                onmouseout="this.src='img/youtube1.png'" width="5%" height="5%">
-                        </a>
-                    </div>
-                </div>
+    <footer class="footer_bar">
+        <div class="footer_content">
+            <div class="contact_info">
+                <p>Email: <a href="mailto:sambuzzappleby@hotmail.co.uk">sambuzzappleby@hotmail.co.uk</a></p>
+                <p>Phone: +44 7465439846</p>
+            </div>
+            <div class="social_links">
+                <a href="https://github.com/SamuelAppleby" target="_blank">
+                    <img src="img/github.svg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/samuel-appleby-52a673206/" target="_blank">
+                    <img src="img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.researchgate.net/profile/Samuel-Appleby-2" target="_blank">
+                    <img src="img/researchgate.svg" alt="ResearchGate">
+                </a>
+                <a href="https://www.youtube.com/@snappyskillz4477" target="_blank">
+                    <img src="img/youtube.png" alt="YouTube">
+                </a>
             </div>
         </div>
-    </section>
-    <!--/ Section Contact-footer End /-->
-
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <div id="preloader"></div>
-
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/popper/popper.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/counterup/jquery.waypoints.min.js"></script>
-    <script src="lib/counterup/jquery.counterup.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
-
+    </footer>
 </body>
 
 </html>
