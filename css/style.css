@@ -210,7 +210,7 @@ h4 {
 .face-change .tooltip {
     position: absolute;
     bottom: 120px;
-    left: 120%;
+    left: 100%;
     opacity: 1;
 }
 
@@ -351,6 +351,19 @@ h4 {
     .video-gallery .profile-box {
         max-width: 90%;
     }
+
+    .nav-center {
+        width: 60px;
+    }
+
+    .nav-center img {
+        /* width: 40px; */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px
+    }
 }
 
 .video-container {
@@ -444,13 +457,6 @@ h4 {
 
 .social-links img:hover {
     filter: brightness(70%);
-}
-
-@media (max-width: 700px) {
-    .footer-content {
-        flex-direction: column;
-        gap: 20px
-    }
 }
 
 ul.custom-list {
