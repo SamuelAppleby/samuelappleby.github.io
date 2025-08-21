@@ -352,17 +352,13 @@ h4 {
         max-width: 90%;
     }
 
-    .nav-center {
-        width: 60px;
-    }
-
-    .nav-center img {
-        /* width: 40px; */
-    }
-
     .footer-content {
         flex-direction: column;
         gap: 20px
+    }
+
+    .nav-center img {
+        top: 30px;
     }
 }
 
