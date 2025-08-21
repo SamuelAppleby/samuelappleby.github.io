@@ -107,28 +107,128 @@ h4 {
 }
 
 .navbar {
-    background-color: #26afb986;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-evenly; */
-    position: fixed;
-    top: 0;
+    margin: 0 auto;
     left: 0;
-    width: 100%;
-    z-index: 10;
-    border-bottom: 2px solid white;
+    right: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 95%;
+    background-color: #26afb986;
+    border-radius: 25px;
+    /* border-bottom: 2px solid rgba(255, 255, 255, 0.473); */
+    box-shadow: 0 2px 8px rgb(255, 255, 255);
+    z-index: 1000;
 }
 
-.navbar img {
+.nav-left,
+.nav-right {
+    display: flex;
+    width: 50%;
+}
+
+.nav-center {
+    width: 54px;
+}
+
+.nav-center img,
+.face-change img {
+    position: absolute;
+    border-radius: 25px;
+    transition: opacity 0.4s ease;
+}
+
+.nav-center img {
     width: 50px;
-    border-radius: 100%;
-    object-fit: cover;
-    flex-shrink: 0;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: 1s ease;
-    position: relative;
-    bottom: -20px;
     border: 2px solid white;
+}
+
+.face-change img.base {
+    position: relative;
+}
+
+.nav-center img.hover,
+.face-change img.hover {
+    opacity: 0;
+    animation: glowPulse 1s infinite alternate;
+    transition: opacity 0.4s ease;
+}
+
+.nav-center:hover img.hover,
+.face-change:hover img.hover {
+    opacity: 1;
+}
+
+.nav-center:hover img.base,
+.face-change:hover img.base {
+    opacity: 0;
+}
+
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 1px 5px rgba(255, 255, 255, 0.6);
+    }
+
+    100% {
+        box-shadow: 0 0 2px 10px rgba(255, 255, 255, 0.8);
+    }
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    animation: tooltipPulse 1s infinite alternate;
+}
+
+@keyframes tooltipPulse {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+.face-change {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.face-change .tooltip {
+    position: absolute;
+    bottom: 120px;
+    left: 120%;
+    opacity: 1;
+}
+
+.face-change:hover .tooltip::after {
+    content: attr(data-hover);
+}
+
+.face-change .tooltip::after {
+    content: attr(data-default);
+}
+
+.nav-center img:hover+.tooltip {
+    opacity: 1;
+}
+
+.nav-link {
+    color: white;
+    height: 50px;
 }
 
 .navbar a {
@@ -145,9 +245,8 @@ h4 {
 }
 
 .navbar a:hover {
-    border: 2px solid white;
+    border-color: white;
     background-color: rgba(255, 255, 255, 0.1);
-    /* filter: brightness(70%); */
 }
 
 .container {
@@ -157,36 +256,36 @@ h4 {
     position: relative;
 }
 
-.section_title {
+.section-title {
     letter-spacing: 4px;
     text-align: center !important;
 }
 
-.grey_rule {
+.grey-rule {
     margin: 50px auto;
     width: 10%;
     border-color: #9e9e9e !important;
 }
 
-.grey_rule_small {
+.grey-rule-small {
     margin: 15px auto;
     width: 8%;
     border-color: #9e9e9e !important;
 }
 
-.grey_rule_smaller {
+.grey-rule-smaller {
     margin: 10px auto;
     width: 5%;
     border-color: #9e9e9e !important;
 }
 
-.grey_rule_smallest {
+.grey-rule-smallest {
     margin: 5px auto;
     width: 3%;
     border-color: #9e9e9e !important;
 }
 
-.profile_box {
+.profile-box {
     max-width: 800px;
     margin: 0px auto;
     padding: 25px 25px;
@@ -199,19 +298,19 @@ h4 {
     text-align: center;
 }
 
-.profile_box ul {
+.profile-box ul {
     padding: 20px;
     width: 100%;
     list-style: none;
 }
 
-.profile_box ul li {
+.profile-box ul li {
     position: relative;
     margin-bottom: 12px;
     line-height: 1.6;
 }
 
-.profile_box img {
+.profile-box img {
     width: 160px;
     height: 160px;
     border-radius: 10px;
@@ -222,44 +321,45 @@ h4 {
     transition: 1s ease
 }
 
-.profile_box img:hover {
+#projects img:hover,
+.pub-box img:hover {
     filter: brightness(70%);
 }
 
-.profile_box a {
+.profile-box a {
     color: #0066cc;
     text-decoration: none;
 }
 
-.profile_box a:hover {
+.profile-box a:hover {
     text-decoration: underline;
 }
 
-.video_gallery {
+.video-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.video_gallery .profile_box {
+.video-gallery .profile-box {
     flex: 1 1 clamp(250px, 30%, 400px);
     max-width: 100%;
     box-sizing: border-box;
 }
 
 @media (max-width: 600px) {
-    .video_gallery .profile_box {
+    .video-gallery .profile-box {
         max-width: 90%;
     }
 }
 
-.video_container {
+.video-container {
     position: relative;
     height: 0;
     overflow: hidden;
 }
 
-.video_container iframe {
+.video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -267,7 +367,7 @@ h4 {
     height: 100%;
 }
 
-.pub_box {
+.pub-box {
     box-sizing: border-box;
     margin: 0 -8px;
     margin-bottom: 16px;
@@ -277,29 +377,29 @@ h4 {
     flex-direction: column;
 }
 
-.pub_box img {
+.pub-box img {
     max-width: 100px;
     height: auto;
     display: block;
     transition: 1s ease;
 }
 
-.pub_box img:hover {
+.pub-box img:hover {
     filter: brightness(70%);
 }
 
-.title_img {
+.title-img {
     display: flex;
     align-items: center
 }
 
-.footer_bar {
+.footer-bar {
     background-color: #333;
     color: #fff;
     padding: 1rem 2rem;
 }
 
-.footer_content {
+.footer-content {
     flex-wrap: wrap;
     align-items: center;
     display: flex;
@@ -309,45 +409,45 @@ h4 {
     margin: 0 auto;
 }
 
-.footer_content a {
+.footer-content a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.footer_content a:hover {
+.footer-content a:hover {
     color: #1e90ff;
 }
 
-.contact_info {
+.contact-info {
     display: flex;
     flex-direction: column;
     /* flex: 1 1 25px; */
 }
 
-.contact_info p {
+.contact-info p {
     margin: 0.2rem 0;
     text-align: left;
 }
 
-.social_links {
+.social-links {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px
 }
 
-.social_links img {
+.social-links img {
     width: 50px;
     transition: 1s ease;
 }
 
-.social_links img:hover {
+.social-links img:hover {
     filter: brightness(70%);
 }
 
 @media (max-width: 700px) {
-    .footer_content {
+    .footer-content {
         flex-direction: column;
         gap: 20px
     }

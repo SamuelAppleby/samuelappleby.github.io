@@ -53,4 +53,3 @@ setInterval(() => {
         prevVideo.pause();
     }, fadeTime); // remove after fade completes
 }, duration);
-
