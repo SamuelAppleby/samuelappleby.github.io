@@ -347,7 +347,7 @@ h4 {
     box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
+@media (max-aspect-ratio: 1/1) {
     .video-gallery .profile-box {
         max-width: 90%;
     }
@@ -358,7 +358,7 @@ h4 {
     }
 
     .nav-center img {
-        top: 50px;
+        top: 30px;
     }
 }
 
@@ -431,7 +431,6 @@ h4 {
 .contact-info {
     display: flex;
     flex-direction: column;
-    /* flex: 1 1 25px; */
 }
 
 .contact-info p {
