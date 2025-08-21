@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<!-- TODO Fix image to the left. Fix container scaling on height-dominated viewports. Fix navbar exceeding screen. Fix CV not displaying properly. -->
+<!-- TODO Fix image to the left. Fix container scaling on height-dominated viewports. Fix navbar exceeding screen. Fix CV not displaying properly. Video boxes? Footer not fitting on width. -->
 
 <head>
     <meta charset="UTF-8">
@@ -40,7 +40,7 @@
     <section id="about" class="container">
         <div class="profile_box">
             <h2 class="section_title">About</h2>
-            <hr class="grey_rule" style="width: 8%">
+            <hr class="grey_rule_small" style="width: 8%">
             <!-- <img src="https://1drv.ms/i/c/a29e1a49be9c04cc/IQRhXRvZKRjuQbx4C1tJNQWPAUhAN5iztQ0qIRxJUuLbe2M"> -->
             <img src="img/me.png">
             <ul>
@@ -110,7 +110,7 @@
     <section id="cv" class="container">
         <div class="profile_box">
             <h2 class="section_title">CV</h2>
-            <hr class="grey_rule" style="width: 8%">
+            <hr class="grey_rule_small">
             <iframe src="https://1drv.ms/b/c/a29e1a49be9c04cc/IQQFd8stuu-tRpxqWdg47xZcAQsv05oB8_KBLqzBErpBb3M"
                 width="100%" height="1000px" frameborder="0" scrolling="no"></iframe>
             <!-- <embed src="cv.pdf" type="application/pdf" width="100%" height="1000px"> -->
@@ -122,14 +122,14 @@
     <section id="projects" class="container">
         <div class="profile_box">
             <h2 class="section_title">Projects</h2>
-            <hr class="grey_rule" style="width: 8%">
+            <hr class="grey_rule_small">
             <h3 class="section_title">Personal</h3>
-            <hr class="grey_rule" style="width: 5%">
+            <hr class="grey_rule_smaller">
             <p>I have a few personal projects which I have worked on in my own time, located on my GitHub <a
                     href="https://github.com/SamuelAppleby">here</a>.</p>
 
             <div class="video_gallery">
-                <div class="profile_box" style="background-color: #80abdd94;">
+                <div class="profile_box" style="background-color: #80abdd94">
                     <a href="https://github.com/SamuelAppleby/Pokemon_Analyser" target="_blank">
                         <img src="img/pokemon.jpg" alt="pokémon">
                     </a>
@@ -141,29 +141,29 @@
                 </div>
             </div>
             <h3 class="section_title">PhD Computer Science</h3>
-            <hr class="grey_rule" style="width: 5%">
+            <hr class="grey_rule_smaller">
             <p>One major element of my PhD was the creation of a deep-reinforcement learning pipeline. This involved the
                 creation of a Simulation and learning pipeline. Several state-of-the-art algorithms were exploited.</p>
             <div class="video_gallery">
-                <div class="profile_box" style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/T3EWD9sNQ_o" allowfullscreen></iframe>
                     </div>
                     <h4>Soft Actor-Critic (SAC)</h4>
                 </div>
-                <div class="profile_box" style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/Znu-BpzF9l8" allowfullscreen></iframe>
                     </div>
                     <h4>Proximal Policy Optimisation (PPO)</h4>
                 </div>
-                <div class="profile_box" style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/OL-aF9csEPY" allowfullscreen></iframe>
                     </div>
                     <h4>Twin Delayed Deep Deterministic Policy Gradient (TD3)</h4>
                 </div>
-                <div class="profile_box" style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/a59t62xESSU" allowfullscreen></iframe>
                     </div>
@@ -172,48 +172,44 @@
             </div>
 
             <h3 class="section_title">MSc Computer Game Engineering</h3>
-            <hr class="grey_rule" style="width: 5%">
+            <hr class="grey_rule_smaller">
             <h4 class="section_title">Team Project</h4>
-            <hr class="grey_rule" style="width: 3%">
+            <hr class="grey_rule_smallest">
             <p>The team project during my MSc degree involved the recreation of a "Fall Guys"
                 knock-off.Our team
                 built a custom game engine from a skeleton codebase using following middleware. The following
                 showcase the levels from my team project (<strong>Feb-Mar, 2021</strong>).</p>
 
             <div class="video_gallery">
-                <div class="profile_box" style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/AAyKStAa8xE" allowfullscreen>
                         </iframe>
                     </div>
                     <h4>Bounce Guys</h4>
                 </div>
-
-                <div class="profile_box" style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/kQibG_dDjfg" allowfullscreen>
                         </iframe>
                     </div>
                     <h4>Monke Kong</h4>
                 </div>
-
-                <div class="profile_box" style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/5QDYEH0j34E" allowfullscreen>
                         </iframe>
                     </div>
                     <h4>Cannon Hell</h4>
                 </div>
-
-                <div class="profile_box" style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/FnK2_-T75i4" allowfullscreen>
                         </iframe>
                     </div>
                     <h4>Sandbox</h4>
                 </div>
-
-                <div class="profile_box" style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/W7C8Sc-Hu8Y" allowfullscreen>
                         </iframe>
@@ -223,12 +219,12 @@
             </div>
 
             <h4 class="section_title">Individual Work</h4>
-            <hr class="grey_rule" style="width: 3%">
+            <hr class="grey_rule_smallest">
             <p>During my BSc and MSc, modules involved the development of game technologies. The following
                 demonstrate those.</p>
 
             <div class="video_gallery">
-                <div class="profile_box" style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/yuYH6jy9kvs" allowfullscreen></iframe>
                     </div>
@@ -237,8 +233,7 @@
                         Guys" knock-off. Available to play <a
                             href="https://samuelappleby.github.io/CSC8507-Coursework/">here!</a></p>
                 </div>
-
-                <div class="profile_box" style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/QZIRu0sOnW0" allowfullscreen></iframe>
                     </div>
@@ -247,8 +242,7 @@
                         knock-off.
                     </p>
                 </div>
-
-                <div class="profile_box" style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/Im6vMV-IjYI" allowfullscreen></iframe>
                     </div>
@@ -258,9 +252,9 @@
             </div>
 
             <h3 class="section_title">BSc Computer Science</h3>
-            <hr class="grey_rule" style="width: 5%">
+            <hr class="grey_rule_smaller">
             <div class="video_gallery">
-                <div class="profile_box" , style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/os0XWlppJ5g" allowfullscreen></iframe>
                     </div>
@@ -270,8 +264,7 @@
                         <a href="https://samuelappleby.github.io/CSC3224-EscapeFromDarkwaterCastle/">here!</a>
                     </p>
                 </div>
-
-                <div class="profile_box" , style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/_jBOvofF6C0" allowfullscreen></iframe>
                     </div>
@@ -281,8 +274,7 @@
                         Action
                         Planning for game AI.</p>
                 </div>
-
-                <div class="profile_box" , style="width: 25%; margin: 20px auto">
+                <div class="profile_box">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/5HuUjj7Qa1w" allowfullscreen></iframe>
                     </div>
@@ -297,10 +289,10 @@
 
     <hr class="grey_rule">
 
-    <section id="publications" class="container">
+    <section id="publications" class="container" style="margin-bottom: 60px;">
         <div class="profile_box">
             <h2 class="section_title">Publications</h2>
-            <hr class="grey_rule" style="width: 8%">
+            <hr class="grey_rule_small">
             <div class="pub_box">
                 <div class="title_img">
                     <h4><strong>Appleby, S.</strong>, Ushaw, G. (2025). <i>From Camera Image to Active Target Tracking:
@@ -313,9 +305,7 @@
                 </div>
                 <p><strong>Keywords:</strong> Deep Learning, Reinforcement Learning, Active Target Tracking, Computer
                     Vision, Sim-to-Real, Unity, Simulation</p>
-
             </div>
-
             <div class="pub_box">
                 <div class="title_img">
                     <h4><strong>Appleby, S.</strong>, Crane, K., Bergami, G., McGough A. S. (2025). <i>SWiMM DEEPeR: A
@@ -331,7 +321,6 @@
                 <p><strong>Keywords:</strong> Deep Learning, Reinforcement Learning, Active Target Tracking, Computer
                     Vision, Sim-to-Real, Unity, Simulation</p>
             </div>
-
             <div class="pub_box">
                 <div class="title_img">
                     <h4>Bergami, G., <strong>Appleby, S.</strong>, Morgan, G. (2023). <i>Specification Mining over
@@ -345,7 +334,6 @@
                 <p><strong>Keywords:</strong> Specification Mining, Temporal Data, Algorithm, Heuristic Search
                 </p>
             </div>
-
             <div class="pub_box">
                 <div class="title_img">
                     <h4><strong>Appleby, S.</strong>, Bergami, G., Morgan, G. (2023). <i>Enhancing Declarative Temporal
@@ -359,7 +347,6 @@
                 <p><strong>Keywords:</strong> Specification Mining, Temporal Data, Algorithm, Heuristic Search
                 </p>
             </div>
-
             <div class="pub_box">
                 <div class="title_img">
                     <h4>Bergami, G., <strong>Appleby, S</strong>. (2023). <i>Quickening Data-Aware Conformance Checking
@@ -371,7 +358,6 @@
                 </div>
                 <p><strong>Keywords:</strong> Conformance Checking, Temporal Algebras, Business Process Management</p>
             </div>
-
             <div class="pub_box" style="margin-bottom: 0px;">
                 <div class="title_img">
                     <h4><strong>Appleby, S.</strong>, Bergami, G., Morgan, G. (2022). <i>Running Temporal Logical

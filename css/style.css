@@ -1,12 +1,25 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(243, 243, 243);
+    margin: 0px;
 }
 
 h4,
 p {
     overflow-wrap: anywhere;
     white-space: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 10px
+}
+
+h3,
+h4 {
+    margin-top: 30px;
 }
 
 .video-slideshow {
@@ -116,7 +129,6 @@ p {
     position: relative;
     bottom: -20px;
     border: 2px solid white;
-
 }
 
 .navbar a {
@@ -141,7 +153,6 @@ p {
 .container {
     width: clamp(60%, 80vw, 90%);
     margin: auto;
-    margin-top: 60px;
     text-align: left;
     position: relative;
 }
@@ -152,8 +163,26 @@ p {
 }
 
 .grey_rule {
-    margin: 25px auto;
+    margin: 50px auto;
     width: 10%;
+    border-color: #9e9e9e !important;
+}
+
+.grey_rule_small {
+    margin: 15px auto;
+    width: 8%;
+    border-color: #9e9e9e !important;
+}
+
+.grey_rule_smaller {
+    margin: 10px auto;
+    width: 5%;
+    border-color: #9e9e9e !important;
+}
+
+.grey_rule_smallest {
+    margin: 5px auto;
+    width: 3%;
     border-color: #9e9e9e !important;
 }
 
@@ -169,13 +198,6 @@ p {
     align-items: center;
     text-align: center;
 }
-
-/*.profile_box iframe {
-    position: absolute;
-    width: 100%;
-    height: 200px;
-    border: 0;
-}*/
 
 .profile_box ul {
     padding: 20px;
@@ -216,8 +238,19 @@ p {
 .video_gallery {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
-    width: 100%;
+    gap: 20px;
+}
+
+.video_gallery .profile_box {
+    flex: 1 1 clamp(250px, 30%, 400px);
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .video_gallery .profile_box {
+        max-width: 90%;
+    }
 }
 
 .video_container {
@@ -267,18 +300,17 @@ p {
 }
 
 .footer_content {
+    flex-wrap: wrap;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
     max-width: 1200px;
-    flex-wrap: wrap;
     margin: 0 auto;
 }
 
 .footer_content a {
     color: #fff;
-    margin-left: 1rem;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -290,17 +322,19 @@ p {
 .contact_info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* flex: 1 1 25px; */
 }
 
 .contact_info p {
     margin: 0.2rem 0;
+    text-align: left;
 }
 
 .social_links {
     display: flex;
-    gap: 1rem;
     align-items: center;
+    justify-content: center;
+    gap: 20px
 }
 
 .social_links img {
@@ -312,15 +346,10 @@ p {
     filter: brightness(70%);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .footer_content {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .social_links {
-        margin-top: 0.5rem;
+        gap: 20px
     }
 }
 
