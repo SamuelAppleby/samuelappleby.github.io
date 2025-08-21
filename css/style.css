@@ -96,6 +96,7 @@ p {
 .navbar {
     background-color: #26afb986;
     display: flex;
+    flex-wrap: wrap;
     /* justify-content: space-evenly; */
     position: fixed;
     top: 0;
@@ -119,28 +120,16 @@ p {
 }
 
 .navbar a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 20px;
-    background: none;
-    border: none;
-    padding: 8px 16px;
     text-decoration: none;
-    cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
     flex: 1;
-    text-decoration: none;
     font-weight: 500;
-    padding: 10px 18px;
     border-radius: 25px;
     transition: border 0.5s ease, background-color 0.5s ease;
     border: 2px solid transparent;
-}
-
-.navbar a.right {
-    float: right;
 }
 
 .navbar a:hover {
@@ -150,7 +139,7 @@ p {
 }
 
 .container {
-    width: 60%;
+    width: clamp(60%, 80vw, 90%);
     margin: auto;
     margin-top: 60px;
     text-align: left;
@@ -170,8 +159,8 @@ p {
 
 .profile_box {
     max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 0px auto;
+    padding: 25px 25px;
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 14px 12px rgba(0, 0, 0, 0.3);
@@ -208,7 +197,6 @@ p {
     flex-shrink: 0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     float: right;
-    margin: 0 0 10px 15px;
     transition: 1s ease
 }
 
@@ -286,8 +274,6 @@ p {
     max-width: 1200px;
     flex-wrap: wrap;
     margin: 0 auto;
-    /* center container horizontally */
-
 }
 
 .footer_content a {
