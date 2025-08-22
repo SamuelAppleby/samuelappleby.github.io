@@ -143,9 +143,9 @@ h4 {
 }
 
 .nav-center img {
-    width: clamp(40px, 8vw, 50px);
+    width: 50px;
     border: 2px solid white;
-    transform: translateY(50%);
+    transform: translateY(clamp(26px, calc(40px - 2vw), 40px));
 }
 
 .face-change img.base {
