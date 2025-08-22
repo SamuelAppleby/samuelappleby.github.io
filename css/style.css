@@ -161,6 +161,9 @@ h4 {
 .nav-center:hover img.hover,
 .face-change:hover img.hover {
     opacity: 1;
+}
+
+.nav-center:hover img.hover {
     animation: glowPulse 1s infinite alternate;
 }
 
@@ -196,8 +199,11 @@ h4 {
 }
 
 .nav-center img:hover+.tooltip {
-    opacity: 1;
     animation: tooltipPulse 1s infinite alternate;
+}
+
+.nav-center img:hover+.tooltip {
+    opacity: 1;
 }
 
 @keyframes tooltipPulse {
@@ -221,14 +227,30 @@ h4 {
     bottom: 120px;
     left: 100%;
     opacity: 1;
+    /* background-color: rgba(72, 165, 194, 0); */
+    animation: tooltipPulse 1s infinite alternate;
+}
+
+.face-change:hover .tooltip {
+    animation: tooltipPulse 1s infinite alternate, bluePulse 1.5s infinite alternate;
+}
+
+.face-change .tooltip::after {
+    content: attr(data-default);
 }
 
 .face-change:hover .tooltip::after {
     content: attr(data-hover);
 }
 
-.face-change .tooltip::after {
-    content: attr(data-default);
+@keyframes bluePulse {
+    0% {
+        box-shadow: 0 0 5px 5px rgba(72, 165, 194, 0.6);
+    }
+
+    100% {
+        box-shadow: 0 0 10px 10px rgba(72, 165, 194, 0.8);
+    }
 }
 
 .nav-link {
