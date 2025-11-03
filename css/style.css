@@ -437,7 +437,6 @@ h4 {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -477,24 +476,38 @@ h4 {
     filter: brightness(70%);
 }
 
-ul.custom-list {
+.custom-list {
     list-style: none;
-    padding-left: 0;
-    margin: 1rem 0;
+    padding: 0;
+    margin: 1em 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #333;
 }
 
-ul.custom-list li {
+.custom-list li {
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     position: relative;
-    padding-left: 25px;
-    margin-bottom: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
-ul.custom-list li::before {
-    content: '–';
-    color: grey;
+.custom-list li::before {
+    content: "•";
+    color: #007acc;
+    /* nice blue accent */
+    font-size: 1.2em;
     position: absolute;
     left: 0;
     top: 0;
-    font-weight: bold;
+}
+
+.custom-list a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.custom-list a:hover {
+    text-decoration: underline;
 }
