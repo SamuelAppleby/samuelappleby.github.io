@@ -511,3 +511,14 @@ h4 {
 .custom-list a:hover {
     text-decoration: underline;
 }
+
+.title-block {
+    margin: 20px 0;
+    /* equal space above and below */
+}
+
+.title-block h3,
+.title-block h4 {
+    margin: 5px 0;
+    /* equal space between headings */
+}
