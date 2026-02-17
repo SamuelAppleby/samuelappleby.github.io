@@ -655,7 +655,7 @@ p {
 
 @media (max-aspect-ratio: 1/1) {
   #about {
-    padding-top: 40vh;
+    padding-top: 60vh;
   }
 
   .business-card {
