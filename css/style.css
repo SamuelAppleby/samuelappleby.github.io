@@ -744,10 +744,10 @@ p {
 
 .phone-video {
   position: absolute;
-  top: 1.25%;
-  left: 12.5%;
-  width: 75%;
-  height: 97.5%;
+  top: 1%;
+  left: 11%;
+  width: 77.5%;
+  height: 98%;
   object-fit: cover;
   border-radius: 20px;
   z-index: 0;
