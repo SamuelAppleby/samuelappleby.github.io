@@ -658,6 +658,11 @@ p {
     width: min(90%, 95vw);
   }
 
+  .span-2 {
+    grid-column: span 1;
+    text-align: center;
+  }
+
   .milestone {
     grid-template-columns: 1fr;
     text-align: center;
