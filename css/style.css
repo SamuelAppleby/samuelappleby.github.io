@@ -279,8 +279,8 @@ p {
 }
 
 .face-change .tooltip {
-  bottom: 70%;
-  left: 90%;
+  bottom: 80%;
+  left: 80%;
   opacity: 1;
   animation: tooltipPulse 1s infinite alternate;
 }
