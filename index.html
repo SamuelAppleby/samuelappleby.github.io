@@ -78,36 +78,42 @@
       <div class="profile-box">
         <h2 class="section-title">About</h2>
         <hr class="grey-rule-small" style="width: 8%" />
-        <!-- <img src="https://1drv.ms/i/c/a29e1a49be9c04cc/IQRhXRvZKRjuQbx4C1tJNQWPAUhAN5iztQ0qIRxJUuLbe2M"> -->
         <div class="business-card">
           <div class="item-row">
-            <div class="face-change">
-              <img src="img/me.png" class="base" alt="Profile" />
-              <img src="img/me_pokemon.png" class="hover" alt="Profile hover" />
-              <span
-                class="tooltip"
-                data-default="Hover over me!"
-                data-hover="Squirtle, I choose you!"
-              ></span>
-            </div>
-            <div class="profile-banner">
-              <img src="img/snappy_systems.png" alt="Logo" />
-              <span>Building Better Worlds</span>
-            </div>
-          </div>
-          <div class="item-row">
-            <span id="identity"
-              >Samuel Appleby <br />
-              Programmer</span
-            >
             <div class="item-column">
-              <span class="contact-info">
-                Email:
-                <a href="mailto:sambuzzappleby@hotmail.co.uk"
-                  >sambuzzappleby@hotmail.co.uk</a
-                >
+              <div class="face-change">
+                <img src="img/me.png" alt="Profile" class="base" />
+                <img
+                  src="img/me_pokemon.png"
+                  alt="Profile Hover"
+                  class="hover"
+                />
+                <span
+                  class="tooltip"
+                  data-default="Hover here"
+                  data-hover="Welcome to my website!"
+                ></span>
+              </div>
+              <span style="width: 200px">
+                Samuel Appleby <br />
+                Programmer
               </span>
-              <span class="contact-info">Phone: +44 7465439846</span>
+            </div>
+            <div class="item-column">
+              <div class="profile-banner">
+                <img src="img/snappy_systems.png" alt="Logo" />
+                <span>Building Better Worlds</span>
+              </div>
+
+              <span class="contact-info">
+                <p>
+                  Email:
+                  <a href="mailto:sambuzzappleby@hotmail.co.uk"
+                    >sambuzzappleby@hotmail.co.uk</a
+                  >
+                </p>
+                <p>Phone: +44 7465439846</p>
+              </span>
             </div>
           </div>
         </div>
@@ -267,6 +273,8 @@
 
     <section id="cv" class="container">
       <div class="profile-box">
+        <h2 class="section-title">CV</h2>
+
         <object
           data="cv.pdf"
           type="application/pdf"
@@ -298,14 +306,16 @@
         <div class="item-row">
           <div class="project-box" id="arbiter">
             <h4>Arbiter</h4>
-            <div class="project-content">
-              <img src="img/arbiter_logo.png" alt="pokémon" />
-              <span>
-                <strong>Android Application.</strong> Arbitrage engine for
-                sports markets. Covers 3 continents, including 10+ countries.
-                Over 60 bookmakers. Multiple markets. Cloud-hosted on Microsoft
-                Azure. Live Firebase notifications.
-              </span>
+            <div class="item-row">
+              <div class="project-content">
+                <img src="img/arbiter_logo.png" alt="pokémon" />
+                <span>
+                  <strong>Android Application.</strong> Arbitrage engine for
+                  sports markets. Covers 3 continents, including 10+ countries.
+                  Over 60 bookmakers. Multiple markets. Cloud-hosted on
+                  Microsoft Azure. Live Firebase notifications.
+                </span>
+              </div>
             </div>
 
             <div class="theory">
@@ -384,7 +394,7 @@
           tracking.
         </p>
         <div class="video-gallery">
-          <div class="profile-box" style="width: 40%">
+          <div class="profile-box">
             <div class="video-container">
               <iframe
                 src="https://www.youtube.com/embed/T3EWD9sNQ_o"
@@ -394,7 +404,7 @@
             </div>
             <h4>Soft Actor-Critic (SAC)</h4>
           </div>
-          <div class="profile-box" style="width: 40%">
+          <div class="profile-box">
             <div class="video-container">
               <iframe
                 src="https://www.youtube.com/embed/Znu-BpzF9l8"
@@ -404,7 +414,7 @@
             </div>
             <h4>Proximal Policy Optimisation (PPO)</h4>
           </div>
-          <div class="profile-box" style="width: 40%">
+          <div class="profile-box">
             <div class="video-container">
               <iframe
                 src="https://www.youtube.com/embed/OL-aF9csEPY"
@@ -414,7 +424,7 @@
             </div>
             <h4>Twin Delayed Deep Deterministic Policy Gradients (TD3)</h4>
           </div>
-          <div class="profile-box" style="width: 40%">
+          <div class="profile-box">
             <div class="video-container">
               <iframe
                 src="https://www.youtube.com/embed/a59t62xESSU"
@@ -615,7 +625,7 @@
         <h3 class="section-title">Articles</h3>
         <hr class="grey-rule-smaller" />
         <div class="pub-box">
-          <div class="title-img">
+          <div class="item-row">
             <span>
               <strong>Appleby, S.</strong>, Ushaw, G. (2025).
               <i
@@ -645,7 +655,7 @@
           </div>
         </div>
         <div class="pub-box">
-          <div class="title-img">
+          <div class="item-row">
             <span>
               Bergami, G., <strong>Appleby, S.</strong>, Morgan, G. (2023).
               <i>Specification Mining over Temporal Data</i>. Computers 2023,
@@ -668,7 +678,7 @@
           </div>
         </div>
         <div class="pub-box">
-          <div class="title-img">
+          <div class="item-row">
             <span>
               Bergami, G., <strong>Appleby, S</strong>. (2023).
               <i
@@ -692,7 +702,7 @@
         <h3 class="section-title">Conference Proceedings</h3>
         <hr class="grey-rule-smaller" />
         <div class="pub-box">
-          <div class="title-img">
+          <div class="item-row">
             <span>
               <strong>Appleby, S.</strong>, Crane, K., Bergami, G., McGough, A.
               S. (2025).
@@ -725,7 +735,7 @@
         </div>
 
         <div class="pub-box">
-          <div class="title-img">
+          <div class="item-row">
             <span>
               <strong>Appleby, S.</strong>, Bergami, G., Morgan, G. (2023).
               <i
@@ -749,7 +759,7 @@
         </div>
 
         <div class="pub-box" style="margin-bottom: 0px">
-          <div class="title-img">
+          <div class="item-row">
             <span>
               <strong>Appleby, S.</strong>, Bergami, G., Morgan, G. (2022).
               <i>Running Temporal Logical Queries on the Relational Model</i>.
@@ -783,7 +793,7 @@
           </p>
           <p>Phone: +44 7465439846</p>
         </div>
-        <div class="profile-banner" style="height: 50px">
+        <div class="profile-banner" style="height: 150px">
           <img src="img/snappy_systems.png" alt="Logo" />
           <span style="font-size: 0.66em">Building Better Worlds</span>
         </div>
