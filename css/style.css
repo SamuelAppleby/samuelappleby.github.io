@@ -650,6 +650,10 @@ p {
 }
 
 @media (max-aspect-ratio: 1/1) {
+  .business-card {
+    width: min(90%, 95vw);
+  }
+
   .milestone {
     grid-template-columns: 1fr;
     text-align: center;
@@ -712,23 +716,18 @@ p {
   }
 
   .face-change {
-    width: clamp(80px, 40vw, 200px);
-    height: clamp(80px, 40vw, 200px);
+    width: clamp(80px, 60vw, 2000px);
+    height: clamp(80px, 60vw, 2000px);
   }
 
   .profile-banner {
-    width: clamp(80px, 70vw, 300px);
-    height: clamp(80px, 40vw, 200px);
+    width: clamp(80px, 100vw, 2000px);
+    height: clamp(80px, 50vw, 2000px);
   }
 }
 
 .business-card .contact-info {
-  font-size: clamp(0.6rem, 1.2vw, 0.8rem);
-}
-
-.business-card .contact-info p,
-.business-card .contact-info a {
-  white-space: nowrap;
+  font-size: clamp(0.45rem, 3vw, 0.9rem);
 }
 
 .phone-mockup {
