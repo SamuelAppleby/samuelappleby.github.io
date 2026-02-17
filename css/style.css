@@ -264,9 +264,10 @@ p {
 }
 
 .face-change {
-  width: 100%;
   position: relative;
   transition: transform 0.4s ease;
+  width: clamp(120px, 40vw, 200px);
+  height: clamp(120px, 40vw, 200px);
 }
 
 .face-change img {
@@ -491,7 +492,7 @@ p {
 }
 
 .business-card {
-  width: 65%;
+  width: min(60%, 95vw);
   margin: 2rem;
   padding: 1rem;
   border-radius: 1rem;
@@ -515,8 +516,8 @@ p {
 }
 
 .face-change {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -530,8 +531,8 @@ p {
 }
 
 .profile-banner {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -710,13 +711,24 @@ p {
     max-width: 60%;
   }
 
-  .business-card .contact-info {
-    font-size: 0.65rem;
+  .face-change {
+    width: clamp(80px, 40vw, 200px);
+    height: clamp(80px, 40vw, 200px);
   }
 
-  .contact-info {
-    text-align: center;
+  .profile-banner {
+    width: clamp(80px, 70vw, 300px);
+    height: clamp(80px, 40vw, 200px);
   }
+}
+
+.business-card .contact-info {
+  font-size: clamp(0.6rem, 1.2vw, 0.8rem);
+}
+
+.business-card .contact-info p,
+.business-card .contact-info a {
+  white-space: nowrap;
 }
 
 .phone-mockup {
