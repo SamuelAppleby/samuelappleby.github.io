@@ -1,425 +1,813 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Samuel Appleby</title>
-    <link rel="icon" type="image/png" href="img/me.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/me.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Federant&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <script src="js/main.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar">
-        <div class="nav-left">
-            <a href="#about" class="nav-link">About</a>
-            <a href="#cv" class="nav-link">CV</a>
-        </div>
+      <div class="nav-left">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#cv" class="nav-link">CV</a>
+      </div>
 
-        <div class="nav-center">
-            <img src="img/me.png" class="base" alt="Profile">
-            <img src="img/me_pokemon.png" class="hover" alt="Profile hover">
-            <span class="tooltip">Hi, I'm Sam!</span>
-        </div>
+      <div class="nav-center">
+        <img src="img/me.png" class="base" alt="Profile" />
+        <img src="img/me_pokemon.png" class="hover" alt="Profile hover" />
+        <span class="tooltip">Hi, I'm Sam!</span>
+      </div>
 
-        <div class="nav-right">
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#publications" class="nav-link">Papers</a>
-        </div>
+      <div class="nav-right">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#publications" class="nav-link">Papers</a>
+      </div>
     </nav>
 
     <div class="video-slideshow">
-        <video class="bg-video" muted playsinline>
-            <source src="videos/sac_new.mp4" type="video/mp4" , preload="none">
-        </video>
-        <video class="bg-video" muted playsinline>
-            <source src="videos/allstars.mp4" type="video/mp4" , preload="none">
-        </video>
-        <video class="bg-video" muted playsinline>
-            <source src="videos/sac_noisy.mp4" type="video/mp4" , preload="none">
-        </video>
-        <video class="bg-video" muted playsinline>
-            <source src="videos/cyberpunk.mp4" type="video/mp4" , preload="none">
-        </video>
+      <video class="bg-video" muted playsinline>
+        <source
+          src="videos/background/sac_new.mp4"
+          type="video/mp4"
+          ,
+          preload="none"
+        />
+      </video>
+      <video class="bg-video" muted playsinline>
+        <source
+          src="videos/background/allstars.mp4"
+          type="video/mp4"
+          ,
+          preload="none"
+        />
+      </video>
+      <video class="bg-video" muted playsinline>
+        <source
+          src="videos/background/sac_noisy.mp4"
+          type="video/mp4"
+          ,
+          preload="none"
+        />
+      </video>
+      <video class="bg-video" muted playsinline>
+        <source
+          src="videos/background/cyberpunk.mp4"
+          type="video/mp4"
+          ,
+          preload="none"
+        />
+      </video>
     </div>
 
     <div style="padding-top: 60vh"></div>
     <section id="about" class="container">
-        <div class="profile-box">
-            <h2 class="section-title">About</h2>
-            <hr class="grey-rule-small" style="width: 8%">
-            <!-- <img src="https://1drv.ms/i/c/a29e1a49be9c04cc/IQRhXRvZKRjuQbx4C1tJNQWPAUhAN5iztQ0qIRxJUuLbe2M"> -->
+      <div class="profile-box">
+        <h2 class="section-title">About</h2>
+        <hr class="grey-rule-small" style="width: 8%" />
+        <!-- <img src="https://1drv.ms/i/c/a29e1a49be9c04cc/IQRhXRvZKRjuQbx4C1tJNQWPAUhAN5iztQ0qIRxJUuLbe2M"> -->
+        <div class="business-card">
+          <div class="item-row">
             <div class="face-change">
-                <img src="img/me.png" class="base" alt="Profile">
-                <img src="img/me_pokemon.png" class="hover" alt="Profile hover">
-                <span class="tooltip" data-default="Hover over me!" data-hover="Squirtle, I choose you!"></span>
+              <img src="img/me.png" class="base" alt="Profile" />
+              <img src="img/me_pokemon.png" class="hover" alt="Profile hover" />
+              <span
+                class="tooltip"
+                data-default="Hover over me!"
+                data-hover="Squirtle, I choose you!"
+              ></span>
             </div>
-            <ul>
-                <li>
-                    I am a final year PhD student at Newcastle University, currently awaiting my thesis defence (2 Feb.
-                    2026). My thesis focuses on bridging the
-                    gap between temporal modelling as
-                    found
-                    in
-                    Business Process Management (BPMN) versus those in real-time systems exploited by (deep)
-                    reinforcement learning, titled:
-                    <div class="title-block">
-                        <h3>On the Modelling of Temporal Data</h3>
-                        <h4>Linear Logics in Event Logs and Deep Reinforcement Learning</h4>
-                    </div>
-                </li>
-
-                <li>
-                    Prior to my PhD and during my MSc in Computer Game Engineering, I was a
-                    junior network programmer at <a href="https://www.lucidgames.co.uk/">Lucid Games Ltd</a>.
-                    developing <i>Destruction AllStars</i>, a new release for the (also newly released) PlayStation 5.
-                    Here, I became familiar with REST API technologies and Node.js. My significant contributions
-                    include:
-
-                    <ul class="custom-list">
-                        <li>Managing message protocols between the client and the web service, specifically, the
-                            integration of filtering into their matchmaking system</li>
-                        <li>Extending Unreal's
-                            <a
-                                href="https://docs.unrealengine.com/4.27/en-US/TestingAndOptimization/Automation/Gauntlet/">Gauntlet's
-                                Automation Framework.</a> Here, I re-adapted the automation tests to communicate and
-                            synchronise
-                            with the web service, allowing for greater control from the network. I also wrote the HTTP
-                            request
-                            system for this project.
-                        </li>
-                    </ul>
-                </li>
-
-                <li>
-                    I have been programming since the start of my bachelor's degree in September 2017. Major milestones
-                    include:
-                    <ul class="custom-list">
-                        <li><strong>PhD Computer Science (2022-)</strong>, Thesis Defence est. 2 Feb. 2026, <i>
-                                Newcastle
-                                University</i>
-                        </li>
-                        <li><strong>MSc Computer Game Engineering (2020-2021)</strong>, Distinction, <i>Newcastle
-                                University</i>
-                        </li>
-                </li>
-                <li><strong>BSc Computer Science (2017-2020)</strong>, 1:1, <i>Newcastle University</i></li>
-            </ul>
-            </li>
-
-            <li>
-                My preferred languages are: Python, C#, C++, Java and C.
-            </li>
-
-            <li>
-                I have also produced some applications of my own. This includes my Pokémon
-                analyser, which has also been used by other developers in the industry of Pokémon game balancing.
-            </li>
-
-            <li>
-                My GitHub, containing most of my projects, can be found <a
-                    href="https://github.com/SamuelAppleby">here.</a>
-            </li>
-            </ul>
+            <div class="profile-banner">
+              <img src="img/snappy_systems.png" alt="Logo" />
+              <span>Building Better Worlds</span>
+            </div>
+          </div>
+          <div class="item-row">
+            <span id="identity"
+              >Samuel Appleby <br />
+              Programmer</span
+            >
+            <div class="item-column">
+              <span class="contact-info">
+                Email:
+                <a href="mailto:sambuzzappleby@hotmail.co.uk"
+                  >sambuzzappleby@hotmail.co.uk</a
+                >
+              </span>
+              <span class="contact-info">Phone: +44 7465439846</span>
+            </div>
+          </div>
         </div>
+
+        <span>
+          I am a computer science postgraduate who has just passed my PhD thesis
+          defence Newcastle University. I have been programming since the start
+          of my bachelor's degree in September 2017. My preferred languages are:
+          Python, Kotlin, C#, C++, Java and C. In my own time, I enjoy
+          developing my own projects and systems. This includes my Pokémon
+          analyser, which has also been used by other developers in the industry
+          of Pokémon game balancing. Most recently, I have developed an Android
+          phone application for sports markets analysis. Further details can be
+          found in the
+          <a href="#projects" class="nav-link">projects</a> section. My GitHub
+          can be found
+          <a href="https://github.com/SamuelAppleby">here.</a></span
+        >
+
+        <hr class="grey-rule-small" />
+        <h3 class="section-title">Education</h3>
+        <hr class="grey-rule-smaller" />
+        <span>
+          My most recent academic experience is passing my thesis defence
+          (02/02/2026) for my PhD Computer Science. My thesis is titled:
+
+          <div class="title-block">
+            <strong>On the Modelling of Temporal Data</strong> <br />
+            <span class="thesis-subtitle-inline">
+              Linear Logics in Event Logs and Deep Reinforcement Learning in
+              Real-Time Simulations
+            </span>
+          </div>
+
+          Which focuses on bridging the gap between temporal modelling as found
+          in Business Process Management (BPM) versus those in real-time systems
+          exploited by (deep) reinforcement learning. Other major milestones
+          include:</span
+        >
+
+        <div class="milestone-cards">
+          <div class="milestone">
+            <img
+              src="img/newcastle_university.svg"
+              alt="Newcastle University logo"
+            />
+            <strong class="span-2">PhD Computer Science (2022–2026)</strong>
+            <span>Newcastle University</span>
+          </div>
+          <div class="milestone">
+            <img src="img/newcastle_university.svg" alt="pokémon" />
+            <strong>MSc Computer Game Engineering (2020–2021)</strong>
+            <span>Distinction</span>
+            <span>Newcastle University</span>
+          </div>
+          <div class="milestone">
+            <img src="img/newcastle_university.svg" alt="pokémon" />
+            <strong>BSc Computer Science (2017–2020)</strong>
+            <span>1:1</span>
+            <span>Newcastle University</span>
+          </div>
+        </div>
+
+        <hr class="grey-rule-small" />
+        <h3 class="section-title">Recent Experience</h3>
+        <hr class="grey-rule-smaller" />
+
+        <span>
+          Prior to my PhD and during my MSc in Computer Game Engineering, I was
+          a junior network programmer at
+          <a href="https://www.lucidgames.co.uk/"><em>Lucid Games Ltd</em></a
+          >. developing <i>Destruction AllStars</i>, a new release for the (also
+          newly released) PlayStation 5. Here, I became familiar with REST API
+          technologies and Node.js. My significant contributions include:</span
+        >
+
+        <ul class="custom-list">
+          <li>
+            Managing message protocols between the client and the web service,
+            specifically, the integration of filtering into their matchmaking
+            system.
+          </li>
+          <li>
+            Extending Unreal's
+            <a
+              href="https://docs.unrealengine.com/4.27/en-US/TestingAndOptimization/Automation/Gauntlet/"
+              >Gauntlet's Automation Framework.</a
+            >
+            Here, I re-adapted the automation tests to communicate and
+            synchronise with the web service, allowing for greater control from
+            the network. I also wrote the HTTP request system for this project.
+          </li>
+        </ul>
+
+        <span>
+          During my time at <em>Lucid Games Ltd</em>, I acquired extensive
+          networking knowledge which I was able to transfer across to my own
+          personal projects.
+        </span>
+
+        <hr class="grey-rule-small" />
+        <h3 class="section-title">Recent Projects</h3>
+        <hr class="grey-rule-smaller" />
+        <div class="item-row">
+          <div class="project-content" style="border-radius: 25px">
+            <img
+              src="img/arbiter_launcher.webp"
+              alt="pokémon"
+              style="width: 100px"
+            />
+          </div>
+          <span style="text-align: left">
+            My most recent project is called <em>Arbiter</em>, an abritrage
+            betting application for Android. Combining my work and academic
+            experience, I was able to produce a pipeline with many components
+            leveraging the following:
+          </span>
+        </div>
+        <div class="item-row">
+          <ul class="custom-list" style="text-align: left">
+            <li>
+              Databases technologies and querying, including PostgreSQL and
+              SQLite
+            </li>
+            <li>Cloud platform hosting from Microsoft Azure</li>
+            <li>
+              Cloud messaging software using Google Firebase Cloud Messaging
+            </li>
+            <li>UI design using Android Jetpack Compose</li>
+            <li>UX design for an Android application</li>
+          </ul>
+          <div class="phone-mockup" style="width: 250px; margin-bottom: 20px">
+            <img
+              src="img/phone-frame.png"
+              class="phone-frame"
+              alt="Phone frame"
+            />
+            <video
+              src="videos/phone_showcase/arbiter.mp4"
+              class="phone-video"
+              autoplay
+              muted
+              loop
+              playsinline
+            ></video>
+          </div>
+        </div>
+
+        <span>
+          I have future plans for this project and hope to publish it on the
+          Google Play Store once copyright and licencing is acquired.
+        </span>
+      </div>
     </section>
 
-    <hr class="grey-rule">
+    <hr class="grey-rule" />
 
     <section id="cv" class="container">
-        <div class="profile-box">
-            <iframe src="https://docs.google.com/gview?url=https://samuelappleby.com/cv.pdf&embedded=true"
-                style="width:100%; height:1000px;" frameborder="0">
-            </iframe>
-        </div>
+      <div class="profile-box">
+        <object
+          data="cv.pdf"
+          type="application/pdf"
+          width="100%"
+          height="1000px"
+        >
+          <p>
+            It seems your browser can’t display PDFs.
+            <a href="cv.pdf" download>Download the CV instead</a>.
+          </p>
+        </object>
+      </div>
     </section>
 
-    <hr class="grey-rule">
+    <hr class="grey-rule" />
 
     <section id="projects" class="container">
-        <div class="profile-box">
-            <h2 class="section-title">Projects</h2>
-            <hr class="grey-rule-small">
-            <h3 class="section-title">Personal</h3>
-            <hr class="grey-rule-smaller">
-            <p>I have a few personal projects which I have worked on in my own time, located on my GitHub <a
-                    href="https://github.com/SamuelAppleby">here</a>.</p>
+      <div class="profile-box">
+        <h2 class="section-title">Projects</h2>
+        <hr class="grey-rule-small" />
+        <h3 class="section-title">Personal</h3>
+        <hr class="grey-rule-smaller" />
+        <p>
+          I have a few personal projects which I have worked on in my own time,
+          located on my GitHub
+          <a href="https://github.com/SamuelAppleby">here</a>.
+        </p>
 
-            <div class="profile-box" style="background-color: #80abdd3d">
-                <a href="https://github.com/SamuelAppleby/Pokemon_Analyser" target="_blank">
-                    <img src="img/pokemon.jpg" alt="pokémon">
-                </a>
-                </img>
-                <h4>Pokémon Team Analyser</h4>
-                <p>A Pokémon type analyser, providing the optimal team combinations per configuration. Uses
-                    Google API to communicate with online spreadsheet datasets. Used by other developers for
-                    Pokémon spin-off game balancing.</p>
+        <div class="item-row">
+          <div class="project-box" id="arbiter">
+            <h4>Arbiter</h4>
+            <div class="project-content">
+              <img src="img/arbiter_logo.png" alt="pokémon" />
+              <span>
+                <strong>Android Application.</strong> Arbitrage engine for
+                sports markets. Covers 3 continents, including 10+ countries.
+                Over 60 bookmakers. Multiple markets. Cloud-hosted on Microsoft
+                Azure. Live Firebase notifications.
+              </span>
             </div>
 
-            <h3 class="section-title">PhD Computer Science</h3>
-            <hr class="grey-rule-smaller">
-            <p>One major element of my PhD was the creation of a deep reinforcement learning pipeline. This involved the
-                creation of a Simulation and learning pipeline. Several state-of-the-art algorithms were exploited.</p>
-            <div class="video-gallery">
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/T3EWD9sNQ_o" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                    <h4>Soft Actor-Critic (SAC)</h4>
-                </div>
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/Znu-BpzF9l8" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                    <h4>Proximal Policy Optimisation (PPO)</h4>
-                </div>
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/OL-aF9csEPY" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                    <h4>Twin Delayed Deep Deterministic Policy Gradient (TD3)</h4>
-                </div>
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/a59t62xESSU" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                    <h4>Soft Actor-Critic (SAC): Noisy</h4>
-                </div>
+            <div class="theory">
+              <span class="concept">Probability Theory</span>
+              <span class="concept">Statistics</span>
+              <span class="concept">Market Analysis</span>
+              <span class="concept">Risk Management</span>
             </div>
 
-            <h3 class="section-title">MSc Computer Game Engineering</h3>
-            <hr class="grey-rule-smaller">
-            <h4 class="section-title">Team Project</h4>
-            <hr class="grey-rule-smallest">
-            <p>The team project during my MSc degree involved the recreation of a "Fall Guys"
-                knock-off. Our team
-                built a custom game engine from a skeleton codebase using a range of middleware. The following
-                showcase the levels from my team project (<strong>Feb-Mar, 2021</strong>).</p>
-
-            <div class="video-gallery">
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/AAyKStAa8xE" allowfullscreen loading="lazy">
-                        </iframe>
-                    </div>
-                    <h4>Bounce Guys</h4>
-                </div>
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/kQibG_dDjfg" allowfullscreen loading="lazy">
-                        </iframe>
-                    </div>
-                    <h4>Monke Kong</h4>
-                </div>
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/5QDYEH0j34E" allowfullscreen loading="lazy">
-                        </iframe>
-                    </div>
-                    <h4>Cannon Hell</h4>
-                </div>
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/FnK2_-T75i4" allowfullscreen loading="lazy">
-                        </iframe>
-                    </div>
-                    <h4>Sandbox</h4>
-                </div>
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/W7C8Sc-Hu8Y" allowfullscreen loading="lazy">
-                        </iframe>
-                    </div>
-                    <h4>Alpha Build</h4>
-                </div>
+            <div class="tech">
+              <span>Kotlin</span>
+              <span>Jetpack Compose</span>
+              <span>Python</span>
+              <span>PostgreSQL</span>
+              <span>SQLite</span>
+              <span>Azure</span>
+              <span>Firebase</span>
+              <span>API Querying</span>
+              <span>REST API</span>
             </div>
-
-            <h4 class="section-title">Individual Work</h4>
-            <hr class="grey-rule-smallest">
-            <p>During my BSc and MSc, modules involved the development of game technologies. The following
-                demonstrate those.</p>
-
-            <div class="video-gallery">
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/yuYH6jy9kvs" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                    <h4>Game Technology Innovations</h4>
-                    <p><strong>Jan-Feb, 2021</strong>. Using a commercial game engine to prototype a "Fall
-                        Guys" knock-off. Available to play <a
-                            href="https://samuelappleby.github.io/CSC8507-Coursework/">here!</a></p>
-                </div>
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/QZIRu0sOnW0" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                    <h4>Advanced Game Technologies</h4>
-                    <p><strong>Dec, 2020-Jan, 2021</strong>. In a homebrew C++ game engine, prototype a "Fall Guys"
-                        knock-off.
-                    </p>
-                </div>
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/Im6vMV-IjYI" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                    <h4>Advanced Graphics For Games</h4>
-                    <p><strong>Nov-Dec, 2020</strong>. Create a <i>Cyberpunk</i> setting using OpenGL.</p>
-                </div>
+          </div>
+          <div>
+            <div class="phone-mockup">
+              <img
+                src="img/phone-frame.png"
+                class="phone-frame"
+                alt="Phone frame"
+              />
+              <video
+                src="videos/phone_showcase/arbiter.mp4"
+                class="phone-video"
+                autoplay
+                muted
+                loop
+                playsinline
+              ></video>
             </div>
-
-            <h3 class="section-title">BSc Computer Science</h3>
-            <hr class="grey-rule-smaller">
-            <div class="video-gallery">
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/os0XWlppJ5g" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                    <h4>Computer Games Development</h4>
-                    <p><strong>Jan-May, 2020</strong>. Create a video game using any engine/technologies. Available to
-                        play
-                        <a href="https://samuelappleby.github.io/CSC3224-EscapeFromDarkwaterCastle/">here!</a>
-                    </p>
-                </div>
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/_jBOvofF6C0" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                    <h4>Dissertation</h4>
-                    <p><strong>Sep, 2019 - May, 2020</strong>. Final year undergraduate dissertation project using
-                        Goal-Oriented
-                        Action
-                        Planning for game AI.</p>
-                </div>
-                <div class="profile-box">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/5HuUjj7Qa1w" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                    <h4>Gaming Simulations</h4>
-                    <p><strong>Jan-May, 2020</strong>. Finish the physics engine, input and game logic for an arcade
-                        game.
-                    </p>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="project-box" id="pokemon">
+          <h4>Pokémon Team Analyser</h4>
+          <div class="project-content">
+            <a
+              href="https://github.com/SamuelAppleby/Pokemon_Analyser"
+              target="_blank"
+            >
+              <img src="img/pokemon.jpg" alt="pokémon" />
+            </a>
+            <span>
+              A Pokémon type analyser, providing the optimal team combinations
+              per configuration. Uses Google API to communicate with online
+              spreadsheet datasets. Used for a community-developed Pokémon
+              spin-off game.
+            </span>
+          </div>
+
+          <div class="theory">
+            <span class="concept">Data Analysis</span>
+            <span class="concept">Statistics</span>
+          </div>
+
+          <div class="tech">
+            <span>C#</span>
+            <span>Google Sheet API</span>
+          </div>
+        </div>
+
+        <h3 class="section-title">PhD Computer Science</h3>
+        <hr class="grey-rule-smaller" />
+        <p>
+          One major element of my PhD was the creation of a deep reinforcement
+          learning pipeline. This involved the creation of a Unity Simulation
+          and learning pipeline. Several state-of-the-art deep reinforcement
+          learning algorithms were used to train an agent for active target
+          tracking.
+        </p>
+        <div class="video-gallery">
+          <div class="profile-box" style="width: 40%">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/T3EWD9sNQ_o"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <h4>Soft Actor-Critic (SAC)</h4>
+          </div>
+          <div class="profile-box" style="width: 40%">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/Znu-BpzF9l8"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <h4>Proximal Policy Optimisation (PPO)</h4>
+          </div>
+          <div class="profile-box" style="width: 40%">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/OL-aF9csEPY"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <h4>Twin Delayed Deep Deterministic Policy Gradients (TD3)</h4>
+          </div>
+          <div class="profile-box" style="width: 40%">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/a59t62xESSU"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <h4>Soft Actor-Critic (SAC): Noisy</h4>
+          </div>
+        </div>
+
+        <h3 class="section-title">MSc Computer Game Engineering</h3>
+        <hr class="grey-rule-smaller" />
+        <h4 class="section-title">Team Project</h4>
+        <hr class="grey-rule-smallest" />
+        <p>
+          The team project during my MSc degree involved the recreation of a
+          <em>Fall Guys</em> knock-off. Our team built a custom game engine from
+          a skeleton codebase using a range of middleware. The following
+          showcase the levels from my team project (<strong
+            >Feb-Mar, 2021</strong
+          >).
+        </p>
+
+        <div class="video-gallery">
+          <div class="profile-box">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/AAyKStAa8xE"
+                allowfullscreen
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+            <h4>Bounce Guys</h4>
+          </div>
+          <div class="profile-box">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/kQibG_dDjfg"
+                allowfullscreen
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+            <h4>Monke Kong</h4>
+          </div>
+          <div class="profile-box">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/5QDYEH0j34E"
+                allowfullscreen
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+            <h4>Cannon Hell</h4>
+          </div>
+          <div class="profile-box">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/FnK2_-T75i4"
+                allowfullscreen
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+            <h4>Sandbox</h4>
+          </div>
+          <div class="profile-box">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/W7C8Sc-Hu8Y"
+                allowfullscreen
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+            <h4>Alpha Build</h4>
+          </div>
+        </div>
+
+        <h4 class="section-title">Individual Work</h4>
+        <hr class="grey-rule-smallest" />
+        <p>
+          During my BSc and MSc, modules involved the development of game
+          technologies. The following demonstrate those.
+        </p>
+
+        <div class="video-gallery">
+          <div class="profile-box">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/yuYH6jy9kvs"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <h4>Game Technology Innovations</h4>
+            <p>
+              <strong>Jan-Feb, 2021</strong>. Using a commercial game engine to
+              prototype a "Fall Guys" knock-off. Available to play
+              <a href="https://samuelappleby.github.io/CSC8507-Coursework/"
+                >here!</a
+              >
+            </p>
+          </div>
+          <div class="profile-box">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/QZIRu0sOnW0"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <h4>Advanced Game Technologies</h4>
+            <p>
+              <strong>Dec, 2020-Jan, 2021</strong>. In a homebrew C++ game
+              engine, prototype a "Fall Guys" knock-off.
+            </p>
+          </div>
+          <div class="profile-box">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/Im6vMV-IjYI"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <h4>Advanced Graphics For Games</h4>
+            <p>
+              <strong>Nov-Dec, 2020</strong>. Create a <i>Cyberpunk</i> setting
+              using OpenGL.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="section-title">BSc Computer Science</h3>
+        <hr class="grey-rule-smaller" />
+        <div class="video-gallery">
+          <div class="profile-box">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/os0XWlppJ5g"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <h4>Computer Games Development</h4>
+            <p>
+              <strong>Jan-May, 2020</strong>. Create a video game using any
+              engine/technologies. Available to play
+              <a
+                href="https://samuelappleby.github.io/CSC3224-EscapeFromDarkwaterCastle/"
+                >here!</a
+              >
+            </p>
+          </div>
+          <div class="profile-box">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/_jBOvofF6C0"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <h4>Dissertation</h4>
+            <p>
+              <strong>Sep, 2019 - May, 2020</strong>. Final year undergraduate
+              dissertation project using Goal-Oriented Action Planning for game
+              AI.
+            </p>
+          </div>
+          <div class="profile-box">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/5HuUjj7Qa1w"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <h4>Gaming Simulations</h4>
+            <p>
+              <strong>Jan-May, 2020</strong>. Finish the physics engine, input
+              and game logic for an arcade game.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <hr class="grey-rule">
+    <hr class="grey-rule" />
 
-    <section id="publications" class="container" style="margin-bottom: 60px;">
-        <div class="profile-box">
-            <h2 class="section-title">Papers</h2>
-            <hr class="grey-rule-small">
-            <h3 class="section-title">Articles</h3>
-            <hr class="grey-rule-smaller">
-            <div class="pub-box">
-                <div class="title-img">
-                    <h4><strong>Appleby, S.</strong>, Ushaw, G. (2025). <i>From Camera Image to Active Target Tracking:
-                            Modelling, Encoding and Metrical Analysis for Unmanned Underwater Vehicles</i>. AI 2025,
-                        6(4),
-                        71. <a href="https://doi.org/10.3390/ai6040071" target="_blank">10.3390/ai6040071</a></h4>
-                    <a href="https://github.com/SamuelAppleby/SWiMM_DEEPeR" target="_blank">
-                        <img src="img/swimm.png" alt="swimm">
-                    </a>
-                </div>
-                <p><strong>Keywords:</strong> Deep Learning, Reinforcement Learning, Active Target Tracking, Computer
-                    Vision, Sim-to-Real, Unity, Simulation</p>
-            </div>
-            <div class="pub-box">
-                <div class="title-img">
-                    <h4>Bergami, G., <strong>Appleby, S.</strong>, Morgan, G. (2023). <i>Specification Mining over
-                            Temporal
-                            Data</i>. Computers 2023, 12(9), 185. <a href="https://doi.org/10.3390/computers12090185"
-                            target="_blank">10.3390/computers12090185</a></h4>
-                    <a href="https://github.com/LogDS/knobab/" target="_blank">
-                        <img src="img/knobab.png" alt="Knobab">
-                    </a>
-                </div>
-                <p><strong>Keywords:</strong> Specification Mining, Temporal Data, Algorithm, Heuristic Search
-                </p>
-            </div>
-            <div class="pub-box">
-                <div class="title-img">
-                    <h4>Bergami, G., <strong>Appleby, S</strong>. (2023). <i>Quickening Data-Aware Conformance Checking
-                            through Temporal Algebras</i>. Information 2023, 14(3), 173. <a
-                            href="https://doi.org/10.3390/info14030173" target="_blank">10.3390/info14030173</a></h4>
-                    <a href="https://github.com/LogDS/knobab/" target="_blank">
-                        <img src="img/knobab.png" alt="Knobab">
-                    </a>
-                </div>
-                <p><strong>Keywords:</strong> Conformance Checking, Temporal Algebras, Business Process Management</p>
-            </div>
-            <h3 class="section-title">Conference Proceedings</h3>
-            <hr class="grey-rule-smaller">
-            <div class="pub-box">
-                <div class="title-img">
-                    <h4><strong>Appleby, S.</strong>, Crane, K., Bergami, G., McGough, A. S. (2025). <i>SWiMM DEEPeR: A
-                            Simulated Underwater Environment for Tracking Marine Mammals Using Deep Reinforcement
-                            Learning
-                            and BlueROV2</i>. AI 2025, 6(4),
-                        71. <a href="https://doi.org/10.1109/CoG57401.2023.10333168"
-                            target="_blank">10.1109/CoG57401.2023.10333168</a></h4>
-                    <a href="https://github.com/SamuelAppleby/SWiMM_DEEPeR" target="_blank">
-                        <img src="img/swimm.png" alt="swimm">
-                    </a>
-                </div>
-                <p><strong>Keywords:</strong> Deep Learning, Reinforcement Learning, Active Target Tracking, Computer
-                    Vision, Sim-to-Real, Unity, Simulation</p>
-            </div>
-
-            <div class="pub-box">
-                <div class="title-img">
-                    <h4><strong>Appleby, S.</strong>, Bergami, G., Morgan, G. (2023). <i>Enhancing Declarative Temporal
-                            Model Mining in Relational Databases: A Preliminary Study</i>.
-                        ACM IDEAS 2023, pp. 34-42, 185. <a href="https://doi.org/10.1145/3589462.3589491"
-                            target="_blank">10.1145/3589462.3589491</a></h4>
-                    <a href="https://github.com/LogDS/knobab/" target="_blank">
-                        <img src="img/knobab.png" alt="Knobab">
-                    </a>
-                </div>
-                <p><strong>Keywords:</strong> Specification Mining, Temporal Data, Algorithm, Heuristic Search
-                </p>
-            </div>
-
-            <div class="pub-box" style="margin-bottom: 0px;">
-                <div class="title-img">
-                    <h4><strong>Appleby, S.</strong>, Bergami, G., Morgan, G. (2022). <i>Running Temporal Logical
-                            Queries on
-                            the Relational Model</i>. ACM IDEAS 2022, pp. 134–143. <a
-                            href="https://doi.org/10.1145/3548785.3548786" target="_blank">10.1145/3548785.3548786</a>
-                    </h4>
-                    <a href="https://github.com/LogDS/knobab/" target="_blank">
-                        <img src="img/knobab.png" alt="Knobab">
-                    </a>
-                </div>
-                <p><strong>Keywords:</strong> Temporal Queries, Relational Model, Query Optimisation, Database Systems
-                </p>
-            </div>
+    <section id="publications" class="container">
+      <div class="profile-box">
+        <h2 class="section-title">Papers</h2>
+        <hr class="grey-rule-small" />
+        <h3 class="section-title">Articles</h3>
+        <hr class="grey-rule-smaller" />
+        <div class="pub-box">
+          <div class="title-img">
+            <span>
+              <strong>Appleby, S.</strong>, Ushaw, G. (2025).
+              <i
+                >From Camera Image to Active Target Tracking: Modelling,
+                Encoding and Metrical Analysis for Unmanned Underwater
+                Vehicles</i
+              >. AI 2025, 6(4), 71.
+              <a href="https://doi.org/10.3390/ai6040071" target="_blank"
+                >10.3390/ai6040071</a
+              >
+            </span>
+            <a
+              href="https://github.com/SamuelAppleby/SWiMM_DEEPeR"
+              target="_blank"
+            >
+              <img src="img/swimm.png" alt="swimm" />
+            </a>
+          </div>
+          <div class="theory">
+            <span class="concept">Deep Learning</span>
+            <span class="concept">Reinforcement Learning</span>
+            <span class="concept">Active Target Tracking</span>
+            <span class="concept">Computer Vision</span>
+            <span class="concept">Sim-to-Real</span>
+            <span class="concept">Unity</span>
+            <span class="concept">Simulation</span>
+          </div>
         </div>
+        <div class="pub-box">
+          <div class="title-img">
+            <span>
+              Bergami, G., <strong>Appleby, S.</strong>, Morgan, G. (2023).
+              <i>Specification Mining over Temporal Data</i>. Computers 2023,
+              12(9), 185.
+              <a
+                href="https://doi.org/10.3390/computers12090185"
+                target="_blank"
+                >10.3390/computers12090185</a
+              >
+            </span>
+            <a href="https://github.com/LogDS/knobab/" target="_blank">
+              <img src="img/knobab.png" alt="Knobab" />
+            </a>
+          </div>
+          <div class="theory">
+            <span class="concept">Specification Mining</span>
+            <span class="concept">Temporal Data</span>
+            <span class="concept">Algorithm Optimisation</span>
+            <span class="concept">Heuristic Search</span>
+          </div>
+        </div>
+        <div class="pub-box">
+          <div class="title-img">
+            <span>
+              Bergami, G., <strong>Appleby, S</strong>. (2023).
+              <i
+                >Quickening Data-Aware Conformance Checking through Temporal
+                Algebras</i
+              >. Information 2023, 14(3), 173.
+              <a href="https://doi.org/10.3390/info14030173" target="_blank"
+                >10.3390/info14030173</a
+              >
+            </span>
+            <a href="https://github.com/LogDS/knobab/" target="_blank">
+              <img src="img/knobab.png" alt="Knobab" />
+            </a>
+          </div>
+          <div class="theory">
+            <span class="concept">Conformance Checking</span>
+            <span class="concept">Temporal Algebras</span>
+            <span class="concept">Business Process Management</span>
+          </div>
+        </div>
+        <h3 class="section-title">Conference Proceedings</h3>
+        <hr class="grey-rule-smaller" />
+        <div class="pub-box">
+          <div class="title-img">
+            <span>
+              <strong>Appleby, S.</strong>, Crane, K., Bergami, G., McGough, A.
+              S. (2025).
+              <i
+                >SWiMM DEEPeR: A Simulated Underwater Environment for Tracking
+                Marine Mammals Using Deep Reinforcement Learning and BlueROV2</i
+              >. AI 2025, 6(4), 71.
+              <a
+                href="https://doi.org/10.1109/CoG57401.2023.10333168"
+                target="_blank"
+                >10.1109/CoG57401.2023.10333168</a
+              >
+            </span>
+            <a
+              href="https://github.com/SamuelAppleby/SWiMM_DEEPeR"
+              target="_blank"
+            >
+              <img src="img/swimm.png" alt="swimm" />
+            </a>
+          </div>
+          <div class="theory">
+            <span class="concept">Deep Learning</span>
+            <span class="concept">Reinforcement Learning</span>
+            <span class="concept">Active Target Tracking</span>
+            <span class="concept">Computer Vision</span>
+            <span class="concept">Sim-to-Real</span>
+            <span class="concept">Unity</span>
+            <span class="concept">Simulation</span>
+          </div>
+        </div>
+
+        <div class="pub-box">
+          <div class="title-img">
+            <span>
+              <strong>Appleby, S.</strong>, Bergami, G., Morgan, G. (2023).
+              <i
+                >Enhancing Declarative Temporal Model Mining in Relational
+                Databases: A Preliminary Study</i
+              >. ACM IDEAS 2023, pp. 34-42, 185.
+              <a href="https://doi.org/10.1145/3589462.3589491" target="_blank"
+                >10.1145/3589462.3589491</a
+              >
+            </span>
+            <a href="https://github.com/LogDS/knobab/" target="_blank">
+              <img src="img/knobab.png" alt="Knobab" />
+            </a>
+          </div>
+          <div class="theory">
+            <span class="concept">Specification Mining</span>
+            <span class="concept">Temporal Data</span>
+            <span class="concept">Algorithm Optimisation</span>
+            <span class="concept">Heuristic Search</span>
+          </div>
+        </div>
+
+        <div class="pub-box" style="margin-bottom: 0px">
+          <div class="title-img">
+            <span>
+              <strong>Appleby, S.</strong>, Bergami, G., Morgan, G. (2022).
+              <i>Running Temporal Logical Queries on the Relational Model</i>.
+              ACM IDEAS 2022, pp. 134–143.
+              <a href="https://doi.org/10.1145/3548785.3548786" target="_blank"
+                >10.1145/3548785.3548786</a
+              >
+            </span>
+            <a href="https://github.com/LogDS/knobab/" target="_blank">
+              <img src="img/knobab.png" alt="Knobab" />
+            </a>
+          </div>
+          <div class="theory">
+            <span class="concept">Temporal Queries</span>
+            <span class="concept">Relational Model</span>
+            <span class="concept">Query Optimisation</span>
+            <span class="concept">Database Systems</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="footer-bar">
-        <div class="footer-content">
-            <div class="contact-info">
-                <p>Email: <a href="mailto:sambuzzappleby@hotmail.co.uk">sambuzzappleby@hotmail.co.uk</a></p>
-                <p>Phone: +44 7465439846</p>
-            </div>
-            <div class="social-links">
-                <a href="https://github.com/SamuelAppleby" target="_blank">
-                    <img src="img/github.svg" alt="GitHub">
-                </a>
-                <a href="https://www.linkedin.com/in/samuel-appleby-52a673206/" target="_blank">
-                    <img src="img/linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://www.researchgate.net/profile/Samuel-Appleby-2" target="_blank">
-                    <img src="img/researchgate.svg" alt="ResearchGate">
-                </a>
-                <a href="https://www.youtube.com/@snappyskillz4477" target="_blank">
-                    <img src="img/youtube.png" alt="YouTube">
-                </a>
-            </div>
+      <div class="footer-content">
+        <div class="contact-info">
+          <p>
+            Email:
+            <a href="mailto:sambuzzappleby@hotmail.co.uk"
+              >sambuzzappleby@hotmail.co.uk</a
+            >
+          </p>
+          <p>Phone: +44 7465439846</p>
         </div>
+        <div class="profile-banner" style="height: 50px">
+          <img src="img/snappy_systems.png" alt="Logo" />
+          <span style="font-size: 0.66em">Building Better Worlds</span>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/SamuelAppleby" target="_blank">
+            <img src="img/github.svg" alt="GitHub" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/samuel-appleby-52a673206/"
+            target="_blank"
+          >
+            <img src="img/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://www.researchgate.net/profile/Samuel-Appleby-2"
+            target="_blank"
+          >
+            <img src="img/researchgate.svg" alt="ResearchGate" />
+          </a>
+          <a href="https://www.youtube.com/@snappyskillz4477" target="_blank">
+            <img src="img/youtube.png" alt="YouTube" />
+          </a>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

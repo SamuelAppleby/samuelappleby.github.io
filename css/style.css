@@ -1,25 +1,52 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     background-color: rgb(243, 243, 243);
+    /* background-color: #3A3A3AFF; */
     margin: 0px;
 }
+
+.milestone-cards {
+    width: 750px;
+    display: grid;
+    gap: 0.75rem;
+    margin: 1rem auto;  /* centers it horizontally */
+}
+
+.milestone {
+      position: relative; /* for pseudo-element */
+  overflow: hidden;   /* clip the gradient */
+  transition: transform 0.3s ease;
+    display: grid;
+    grid-template-columns: 30px 360px 70px 160px; /* logo | title | grade | university */
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fafafa;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.span-2 {
+  grid-column: span 2;
+      text-align: center;
+}
+
+.milestone span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.milestone img {
+    max-height: 32px;
+    object-fit: contain;
+}
+
 
 h4,
 p {
     overflow-wrap: anywhere;
     white-space: normal;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    margin: 10px
-}
-
-h3,
-h4 {
-    margin-top: 30px;
 }
 
 .video-slideshow {
@@ -107,6 +134,7 @@ h4 {
 }
 
 .navbar {
+    top:0;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -129,23 +157,49 @@ h4 {
 
 .nav-center {
     position: relative;
+        flex-direction: column;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.4s ease;
 }
 
-.nav-center img,
-.face-change img {
+.nav-center img {
     position: absolute;
     border-radius: 25px;
     transition: opacity 0.4s ease;
-
 }
 
 .nav-center img {
     width: 50px;
     border: 2px solid white;
     transform: translateY(clamp(26px, calc(40px - 2vw), 45px));
+}
+
+.profile-banner {
+    display: flex;
+        flex: 1;               /* take all remaining horizontal space */
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(48, 44, 44, 0.226);
+    padding: 12px 26px;
+    border-radius: 12px;
+    font-family: 'Orbitron', sans-serif;
+    /* color: #fff; */
+    white-space: nowrap; /* keep on one line */
+    justify-content: center;
+    height: 120px;
+}
+
+
+.profile-banner img {
+    height: 80%;
+}
+
+.profile-banner span {
+    font-size: 1em;
 }
 
 .face-change img.base {
@@ -218,12 +272,14 @@ h4 {
 
 .face-change {
     display: flex;
+    align-items: center;
     justify-content: center;
     position: relative;
+    margin-bottom: 10px;
+    height: 150px;
 }
 
 .face-change .tooltip {
-    position: absolute;
     bottom: 120px;
     left: 100%;
     opacity: 1;
@@ -286,6 +342,7 @@ h4 {
 .section-title {
     letter-spacing: 4px;
     text-align: center !important;
+    margin-top: 30px;
 }
 
 .grey-rule {
@@ -310,6 +367,199 @@ h4 {
     margin: 5px auto;
     width: 3%;
     border-color: #9e9e9e !important;
+}
+
+.tech span, .theory span {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.tech, .theory {
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 8px; 
+  display: flex;
+  justify-content: center;
+}
+
+.concept {
+  background-color: rgb(166, 179, 185);
+}
+
+.project-content {
+  display: flex;
+  gap: 16px;
+  align-items: center; /* vertically center the content */
+}
+
+.project-content img {
+  max-height: 100px;  /* scale nicely */
+  width: auto;
+border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.project-content span {
+      font-size: 0.80rem;
+}
+
+#arbiter {
+  /* background-color: rgba(102, 204, 255, 0.377); */
+    font-family: 'Orbitron', cursive;
+    background-color: #3A3A3AFF;
+}
+
+#arbiter span {
+  color: #fff;
+}
+
+#arbiter .tech span {
+  background-color: #66CCFFFF;
+}
+
+#arbiter h4 {
+  color: #66CCFFFF;
+}
+
+#pokemon {
+    /* font-family: 'Luckiest Guy', cursive; */
+        font-family: "Bitcount Grid Double", system-ui, sans-serif;
+  font-optical-sizing: auto; /* variable font feature */
+  font-weight: 700;           /* default weight */
+  font-style: normal;
+  font-variation-settings: 
+    "slnt" 0,   /* slant */
+    "CRSV" 0.5, /* cross stroke */
+    "ELSH" 0,   /* horizontal stretch */
+    "ELXP" 0;   /* expansion */
+  background-color: #c5e41481;
+}
+
+#pokemon .tech span {
+  background-color: #f7e7008a;
+}
+
+#pokemon h4 {
+    color: #f7e600; /* Pikachu yellow */
+}
+
+#pokemon {
+  border-color: #ffcb05; /* Pikachu yellow */
+}
+
+#arbiter {
+  border-color: #66ccff; /* Ice blue */
+}
+
+.project-box {
+  background-color: #f0f8ff; /* light blue, can change per project */
+  border: 2px solid #4ab0f5; /* main border color */
+  border-radius: 16px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 700px; /* optional for layout */
+}
+
+.project-box:hover {
+  transform: translateY(-4px); /* subtle lift on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+.project-box h4 {
+  font-size: 1.8rem;
+  margin: 0 0 8px 0;
+  text-shadow:
+    -2px -2px 0 #000,
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000,
+    -2px  0px 0 #000,
+     2px  0px 0 #000,
+     0px -2px 0 #000,
+     0px  2px 0 #000;
+}
+
+.item-row .item-column {
+  margin-left: auto;
+}
+
+.business-card .item-row {
+    display: grid;
+    grid-template-columns: 150px 1fr; /* first column fixed, second column flexible */
+    align-items: center;
+    gap: 16px; /* space between columns */
+}
+
+.item-row{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-column .contact-info {
+    text-align: right;
+      font-size: 0.80rem;
+}
+
+.business-card .item-column {
+    justify-content: end;
+}
+
+.thesis-subtitle-inline {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #555;
+}
+
+.business-card {
+  background: linear-gradient(135deg, #ffcf8b, #ffb347);
+  margin-bottom: 50px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #2a3439, #66ccff); /* gunmetal → soft icy grey-blue */
+  /* border: 1px solid rgba(163, 205, 227, 0.9); */
+  box-shadow:
+    0 0 0 1px rgba(163, 205, 227, 0.6),
+    0 10px 20px rgba(0, 0, 0, 0.25),
+    0 0 25px rgba(42, 52, 57, 0.4);
+  color: #fff;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.video-gallery .profile-box:hover, .business-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* .business-card {
+  background: linear-gradient(135deg, #f9fafb, #eceff3);
+  padding: 14px 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.15);
+} */
+
+.video-gallery .profile-box {
+    padding: 7px;
+          transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .profile-box {
@@ -337,18 +587,16 @@ h4 {
     line-height: 1.6;
 }
 
-.profile-box img {
-    width: 160px;
-    height: 160px;
-    border-radius: 10px;
-    object-fit: cover;
+.face-change img {
+    position: absolute;
+    border-radius: 5px;
+    transition: opacity 0.4s ease;
+    height: 100%;
     flex-shrink: 0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    float: right;
-    transition: 1s ease
 }
 
-#projects img:hover,
+#pokemon img:hover,
 .pub-box img:hover {
     filter: brightness(70%);
 }
@@ -368,10 +616,32 @@ h4 {
     gap: 20px;
 }
 
+.video-gallery .profile-box p {
+    font-size: 0.8rem;
+}
+
+.video-gallery .profile-box h4 {
+    font-size: 0.9rem;
+    height: 10px;
+  display: flex;
+  align-items: center;     /* vertically center titles */
+  justify-content: center;
+  text-align: center;
+}
+
+.video-gallery .video-container {
+  flex-shrink: 0;            /* video keeps its size */
+}
+
 .video-gallery .profile-box {
-    flex: 1 1 clamp(250px, 30%, 400px);
-    max-width: 100%;
-    box-sizing: border-box;
+    width: 250px;
+  box-sizing: border-box;
+}
+
+.profile-box h4 {
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center;
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -385,10 +655,31 @@ h4 {
     }
 }
 
+.phone-mockup {
+  position: relative;
+  width: 300px;
+}
+
+.phone-frame {
+    position: relative;
+  width: 80%;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.phone-video {
+  position: absolute;
+  top: 1.25%;
+  left: 12.5%;
+  width: 75%;
+  height: 97.5%;
+  object-fit: cover;
+  border-radius: 20px;
+  z-index: 0;
+}
+
 .video-container {
     position: relative;
-    height: 0;
-    overflow: hidden;
 }
 
 .video-container iframe {
@@ -401,19 +692,21 @@ h4 {
 
 .pub-box {
     box-sizing: border-box;
-    margin: 0 -8px;
     margin-bottom: 16px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
+    padding: 10px
 }
 
 .pub-box img {
-    max-width: 100px;
+    max-width: 70px;
     height: auto;
     display: block;
     transition: 1s ease;
+    border-radius: 5px;
+    align-items: center;
 }
 
 .pub-box img:hover {
@@ -422,13 +715,16 @@ h4 {
 
 .title-img {
     display: flex;
-    align-items: center
+    align-items: center;
+    gap: 10px;
 }
 
 .footer-bar {
     background-color: #333;
     color: #fff;
-    padding: 1rem 2rem;
+        align-items: center;  /* vertically center children */
+        padding: 1rem 2rem; 
+
 }
 
 .footer-content {
@@ -436,8 +732,16 @@ h4 {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     margin: 0 auto;
+}
+
+#publications{
+    margin-bottom: 60px
+}
+
+.item-column{
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-content a {
@@ -448,11 +752,6 @@ h4 {
 
 .footer-content a:hover {
     color: #1e90ff;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
 }
 
 .contact-info p {
@@ -480,7 +779,6 @@ h4 {
     list-style: none;
     padding: 0;
     margin: 1em 0;
-    font-family: "Segoe UI", Arial, sans-serif;
     color: #333;
 }
 
