@@ -393,6 +393,10 @@ p {
   background-color: rgb(166, 179, 185);
 }
 
+#about {
+  margin-top: 60vh;
+}
+
 .profile-content {
   width: 100%;
 }
@@ -650,6 +654,10 @@ p {
 }
 
 @media (max-aspect-ratio: 1/1) {
+  #about {
+    margin-top: 40vh;
+  }
+
   .business-card {
     width: min(90%, 95vw);
   }
