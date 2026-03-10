@@ -697,7 +697,7 @@ p {
     margin: 20px !important;
   }
 
-  footer.footer-bar .profile-banner {
+  .footer-bar .profile-banner {
     position: relative !important;
     top: auto !important;
     left: auto !important;
@@ -710,6 +710,7 @@ p {
   }
 
   .footer-bar .social-links {
+    padding: 15px;
     order: 2;
   }
 
