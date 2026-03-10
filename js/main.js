@@ -36,7 +36,9 @@ const fadeTime = 3000; // 1 second fade
 
 // Make the first video visible immediately
 videos[current].classList.add('active');
-videos[current].play();
+videos[current].play().catch(() => {
+  // silently ignore mobile autoplay restrictions
+});
 
 setInterval(() => {
     const prevVideo = videos[current];
