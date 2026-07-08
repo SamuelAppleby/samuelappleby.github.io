@@ -514,6 +514,18 @@ p {
   font-weight: 700;
 }
 
+.cv-download {
+  display: none;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .project-date {
   font-size: 0.8rem;
   letter-spacing: 1.5px;
@@ -778,6 +790,16 @@ p {
   .profile-banner {
     width: clamp(80px, 100vw, 2000px);
     height: clamp(80px, 50vw, 2000px);
+  }
+
+  .cv-frame {
+    display: none;
+  }
+
+  .cv-download {
+    display: block;
+    text-align: center;
+    margin: 30px 0;
   }
 }
 
